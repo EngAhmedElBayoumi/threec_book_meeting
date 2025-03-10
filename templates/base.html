@@ -1,0 +1,467 @@
+
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html class="no-js" lang="ZXX">
+    <head>
+        <!-- Meta Tags -->
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <!-- Favicon -->
+        <link rel="icon" type="image/x-icon" href="assets/images/new/3C.png" />
+        <!-- Site Title -->
+        <title>{% trans '3 School Coding' %}</title>
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/bootstrap.min.css' %}" />
+        <!-- Animate CSS -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/animate.min.css' %}" />
+        <!-- Owl Carousel CSS -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/owl.carousel.min.css' %}" />
+        <!-- Maginific Popup CSS -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/maginific-popup.min.css' %}" />
+        <!-- Nice Select CSS -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/nice-select.min.css' %}" />
+        <!-- Icofont -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/icofont.css' %}" />
+        <!-- Uicons -->
+        <link rel="stylesheet" href="{% static 'assets/plugins/css/uicons.css' %}" />
+        <!-- Main CSS -->
+        <link rel="stylesheet" href="{% static 'assets/libs/Inte_Tel_Code/css/intlTelInput.css' %}" />
+        <link rel="stylesheet" href="{% static 'style.css' %}" />
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <!--if language is arabic-->
+        {% if LANGUAGE_CODE == 'ar' %}
+            <link rel="stylesheet" href="{% static 'style_rtl.css' %}" />
+        {% endif %}
+
+        <style>
+          .ep-header__btn {
+              display: flex;
+              align-items: center;
+              gap: 15px;
+          }
+      
+          .language-select-container {
+              position: relative;
+              display: inline-block;
+          }
+      
+          .language-select {
+              appearance: none;
+              padding: 10px 40px 10px 35px;
+              border-radius: 5px;
+              border: 1px solid #ccc;
+              font-size: 16px;
+              background: #f9f9f9;
+              cursor: pointer;
+              min-width: 140px;
+          }
+      
+          .language-select-container::before {
+              content: '';
+              position: absolute;
+              left: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 20px;
+              height: 20px;
+              background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%23555555'%3E%3Cpath d='M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z'/%3E%3C/svg%3E");
+              background-repeat: no-repeat;
+              background-position: center;
+              background-size: contain;
+          }
+      
+          .language-select-container::after {
+              content: '';
+              position: absolute;
+              right: 10px;
+              top: 50%;
+              transform: translateY(-50%);
+              width: 10px;
+              height: 10px;
+              border-left: 2px solid #555;
+              border-bottom: 2px solid #555;
+              transform: translateY(-50%) rotate(-45deg);
+              pointer-events: none;
+          }
+      
+          /* Match button height with select */
+          .ep-btn {
+              padding: 10px 20px;
+              display: inline-flex;
+              align-items: center;
+              gap: 5px;
+              text-decoration: none;
+              border-radius: 5px;
+          }
+      
+          .ep-btn i {
+              font-size: 14px;
+              transition: transform 0.3s ease;
+          }
+      
+          .ep-btn:hover i {
+              transform: translateX(5px);
+          }
+      
+          /* RTL Support */
+          html[dir="rtl"] .language-select {
+              padding: 10px 35px 10px 40px;
+          }
+      
+          html[dir="rtl"] .language-select-container::before {
+              left: auto;
+              right: 10px;
+          }
+      
+          html[dir="rtl"] .language-select-container::after {
+              right: auto;
+              left: 10px;
+          }
+      </style>
+        {% block style %}
+        
+        {% endblock %}
+
+    </head>
+    <body class="ep-magic-cursor">
+        <!-- Start Preloader  -->
+        <div id="preloader">
+            <div id="ep-preloader" class="ep-preloader">
+                <div class="animation-preloader">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+        <!-- End Preloader -->
+
+        <!---- django message alert with close button -->
+        {% if messages %}
+        {% for message in messages %}
+        <div class="alert alert-{{ message.tags }} alert-dismissible fade show" role="alert">
+            {{ message }}
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+        {% endif %}
+
+        
+
+
+
+        <!-- Start Back To Top  -->
+        <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+                <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+        </div>
+        <!-- End Back To Top -->
+
+        <!-- Mobile Menu Modal -->
+        <div class="modal mobile-menu-modal offcanvas-modal fade" id="offcanvas-modal">
+            <div class="modal-dialog offcanvas-dialog">
+                <div class="modal-content">
+                    <div class="modal-header offcanvas-header">
+                        <!-- offcanvas-logo-start -->
+                        <div class="offcanvas-logo">
+                            <a href="index.html">
+                                <img src="{% static 'assets/images/new/3C.png' %}" alt="logo" />
+                            </a>
+                        </div>
+                        <!-- offcanvas-logo-end -->
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fi fi-ss-cross"></i>
+                        </button>
+                    </div>
+                    <div class="mobile-menu-modal-main-body">
+                        <!-- offcanvas-menu start -->
+                        <nav id="offcanvas-menu" class="navigation offcanvas-menu">
+                            <ul id="nav mobile-nav" class="list-none offcanvas-men-list">
+                                <li>
+                                    <a class="" href="javascript:void(0)">{% trans 'Home' %}</a>
+                                   
+                                </li>
+                                <li>
+                                    <a href="#">{% trans 'About Us' %}</a>
+                                </li>
+                                <li>
+                                    <a href="#">{% trans 'Contact Us' %}</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Mobile Menu Modal -->
+
+
+        <!--  Top Header contain change language form --->
+       
+
+        <!-- Start Header Area -->
+        <header class="ep-header ep-header--style2 position-relative">
+            <!-- Header Middle -->
+            <div id="active-sticky" class="ep-header__middle ep-header__middle--style2">
+                <div class="container ">
+                    <div class="ep-header__inner ep-header__inner--style2">
+                        <div class="row align-items-center">
+                            <div class="col-lg-2 col-6">
+                                <div class="ep-logo">
+                                    <a href="index.html">
+                                        <img src="{% static 'assets/images/new/3C.png' %}" alt="logo" />
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-lg-10 col-6">
+                                <div class="ep-header__inner-right">
+                                    <nav class="ep-header__navigation">
+                                        <ul class="ep-header__menu ep-header__menu--style2">
+                                            <li class="active">
+                                                <a href="#">{% trans "Home" %}  </a>
+                                                
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans "About us" %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans "Contact Us" %}</a>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                    <div class="ep-header__btn">
+                                      <a href="#" class="ep-btn ep5-bg">{% trans 'Read More ' %}<i class="fi fi-rs-arrow-small-right"></i></a>
+                                      <form method="post" action="{% url 'set_language' %}" class="language-select-container">
+                                          {% csrf_token %}
+                                          <select 
+                                              name="language" 
+                                              onchange="this.form.submit()" 
+                                              class="language-select">
+                                              <option value="en" {% if LANGUAGE_CODE == 'en' %}selected{% endif %}>
+                                                  English
+                                              </option>
+                                              <option value="ar" {% if LANGUAGE_CODE == 'ar' %}selected{% endif %}>
+                                                  Arabic
+                                              </option>
+                                          </select>
+                                      </form>
+                                  </div>
+
+
+                                    
+
+                                </div>
+                                <!-- Mobile Menu Button -->
+                                <button type="button" class="mobile-menu-offcanvas-toggler" data-bs-toggle="modal" data-bs-target="#offcanvas-modal">
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                    <span class="line"></span>
+                                </button>
+                                <!-- End Mobile Menu Button -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- End Header Area -->
+
+
+        {% block content %}
+
+        {% endblock %}
+
+        
+
+                  <!-- Start Footer Area -->
+                  <footer class="ep-footer position-relative">
+                    <div class="container ">
+                        <div class="ep-footer__top">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="ep-footer__widget footer-about">
+                                        <div class="ep-footer__logo">
+                                            <a href="index.html">
+                                                <img src="{% static 'assets/images/new/3C.png' %}" alt="footer-logo" />
+                                            </a>
+                                        </div>
+                                        <p class="ep-footer__text">{% trans 'It is a long established fact that a reader will be distracted' %}
+                                        </p>
+                                        <div class="ep-footer__contact">
+                                            <div class="ep-footer__contact-single">
+                                                <div class="ep-footer__contact-icon">
+                                                    <i class="fi fi-rs-marker"></i>
+                                                </div>
+                                                <div class="ep-footer__contact-info">
+                                                    <p>{% trans 'Address' %}</p>
+                                                    <span>{% trans '66 Broklyant, New York India' %}</span>
+                                                </div>
+                                            </div>
+                                            <div class="ep-footer__contact-single">
+                                                <div class="ep-footer__contact-icon">
+                                                    <i class="fi fi-rr-phone-call"></i>
+                                                </div>
+                                                <div class="ep-footer__contact-info">
+                                                    <p>{% trans 'Phone Number' %}</p>
+                                                    <a href="tel:012 345 678 9101">{% trans '012 345 678 9101' %}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-4 col-12">
+                                    <div class="ep-footer__widget footer-links">
+                                        <h4 class="ep-footer__widget-title">{% trans 'About Company' %}</h4>
+                                        <ul class="ep-footer__links-list">
+                                            <li>
+                                                <a href="#">{% trans 'Service' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'FAQ' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'Testimonial' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'About Us' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'Portfolio' %}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="ep-footer__widget footer-services">
+                                        <h4 class="ep-footer__widget-title">{% trans 'Services' %}</h4>
+                                        <ul class="ep-footer__links-list">
+                                            <li>
+                                                <a href="#"> <i class="fi fi-br-angle-double-small-right"></i>{% trans 'Reliable Rentals ' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="fi fi-br-angle-double-small-right"></i>{% trans 'Golden Key Properties ' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="fi fi-br-angle-double-small-right"></i>{% trans 'Swift Home Sales ' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="fi fi-br-angle-double-small-right"></i>{% trans 'Elite Realty Services ' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#"> <i class="fi fi-br-angle-double-small-right"></i>{% trans 'Dream Property Solutions ' %}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 col-12">
+                                    <div class="ep-footer__widget footer-newsletter">
+                                        <h4 class="ep-footer__widget-title">{% trans 'Newsletter' %}</h4>
+                                        <form action="#" method="post" class="ep-footer__newsletter">
+                                            <input type="email" name="email" placeholder="Your e-mail" required />
+                                            <button type="submit">
+                                                <i class="fi fi-ss-paper-plane"></i>
+                                            </button>
+                                        </form>
+                                        <div class="ep-footer__social">
+                                            <h5 class="ep-footer__social-title">{% trans 'Follow Us' %}</h5>
+                                            <ul>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icofont-facebook"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icofont-twitter"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icofont-linkedin"></i>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="#">
+                                                        <i class="icofont-pinterest"></i>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ep-footer__bottom">
+                            <div class="row">
+                                <div class="col-lg-6 col-12">
+                                    <div class="ep-footer__copyright">
+                                        <p>{% trans '© 2024 | All Rights Reserved' %}
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-12">
+                                    <div class="ep-footer__bottom-link">
+                                        <ul>
+                                            <li>
+                                                <a href="#">{% trans 'Terms & Condition' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'Privacy Policy' %}</a>
+                                            </li>
+                                            <li>
+                                                <a href="#">{% trans 'Contact Us' %}</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ep-footer__pattern">
+                        <img src="{% static 'assets/images/footer/footer-pattern.png' %}" alt="footer-pattern" />
+                    </div>
+                </footer>
+                <!-- End Footer Area -->
+            </div>
+        </div>
+
+        <!-- Jquery JS -->
+        <script src="{% static 'assets/plugins/js/jquery.min.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/jquery-migrate.js' %}"></script>
+
+        <!-- Bootstrap JS -->
+        <script src="{% static 'assets/plugins/js/bootstrap.min.js' %}"></script>
+        <!-- Gsap JS -->
+        <script src="{% static 'assets/plugins/js/gsap/gsap.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-to-plugin.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-smoother.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-trigger.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/gsap/gsap-split-text.js' %}"></script>
+        <!-- Wow JS -->
+        <script src="{% static 'assets/plugins/js/wow.min.js' %}"></script>
+        <!-- Owl Carousel JS -->
+        <script src="{% static 'assets/plugins/js/owl.carousel.min.js' %}"></script>
+        <!-- Magnific Popup JS -->
+        <script src="{% static 'assets/plugins/js/magnific-popup.min.js' %}"></script>
+        <!-- CounterUp  JS -->
+        <script src="{% static 'assets/plugins/js/jquery.counterup.min.js' %}"></script>
+        <script src="{% static 'assets/plugins/js/waypoints.min.js' %}"></script>
+        <!-- Nice Select JS -->
+        <script src="{% static 'assets/plugins/js/nice-select.min.js' %}"></script>
+        <!-- Cursor JS -->
+        <script src="{% static 'assets/plugins/js/ep-cursor.js' %}"></script>
+        <!-- Back To Top JS -->
+        <script src="{% static 'assets/plugins/js/backToTop.js' %}"></script>
+        <!-- Main JS -->
+        <script src="{% static 'assets/plugins/js/active.js' %}"></script>
+        <script src="{% static 'assets/libs/Inte_Tel_Code/js/intlTelInput.js' %}"></script>
+        
+        {% block script %}
+
+        {% endblock %}
+        
+    </body>
+</html>
+

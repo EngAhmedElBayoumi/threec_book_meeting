@@ -1,0 +1,420 @@
+@import "assets/section-css/reset.css";
+@import "assets/section-css/header.css";
+@import "assets/section-css/hero.css";
+@import "assets/section-css/about.css";
+@import "assets/section-css/category.css";
+@import "assets/section-css/course.css";
+@import "assets/section-css/brand.css";
+@import "assets/section-css/team.css";
+@import "assets/section-css/funfact.css";
+@import "assets/section-css/faq.css";
+@import "assets/section-css/testimonial.css";
+@import "assets/section-css/video.css";
+@import "assets/section-css/blog.css";
+@import "assets/section-css/group-study.css";
+@import "assets/section-css/service.css";
+@import "assets/section-css/pricing.css";
+@import "assets/section-css/event.css";
+@import "assets/section-css/product.css";
+@import "assets/section-css/breadcrumbs.css";
+@import "assets/section-css/contact.css";
+@import "assets/section-css/auth.css";
+@import "assets/section-css/error.css";
+@import "assets/section-css/mobile-menu.css";
+@import "assets/section-css/footer.css";
+
+
+.BookFormBox .nice-select{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.BookFormBox{
+    padding: 32px;
+    background-color: white;
+    border-radius: 0.5rem;
+    box-shadow: 0px 0.9px 3.2px rgba(0, 0, 0, 0.028), 0px 2.5px 8.8px rgba(0, 0, 0, 0.04), 0px 6px 21.1px rgba(0, 0, 0, 0.052), 0px 20px 70px rgba(0, 0, 0, 0.08);
+    width: 80%;
+    margin: auto;
+}
+.BookFormBox .MainTitle{
+    margin-bottom: 20px;
+}
+.BookFormBox .MainTitle p{
+    color: #000;
+    font-weight: 300;
+    text-align: center;
+}
+.BookFormBox .FormBook{
+
+}
+.BookFormBox .FormBook .form-group{
+    margin-bottom: 15px;
+}
+.BookFormBox .FormBook .form-group label{
+    font-weight: 500;
+    color: #000;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+.BookFormBox .FormBook .form-group .form-control{
+    
+}
+.BookFormBox .FormBook .form-group .ep-btn{
+    border-radius: 0;
+    display: block;
+    width: 100%;
+}
+.BookFormBox .SecTitle{
+display: flex;
+align-items: center;
+gap: 8px;
+justify-content: center;
+margin-bottom: 15px;
+}
+.BookFormBox .SecTitle p{
+color: #000;
+font-size: 15px;
+font-weight: 300;
+}
+.BookFormBox .SecTitle svg{
+    color: #ff5a43;
+}
+.BookFormBox .Description{
+
+}
+.BookFormBox .Description p{
+    color: #666666;
+    font-size: 14px;
+    line-height: normal;
+}
+.iti--separate-dial-code .iti__selected-flag {
+    background-color: transparent;
+    border-right: 1px solid #e7e7eb;
+    color: #000;
+}
+
+
+.BookZoom{
+
+}
+.BookZoom .MainTitle{
+    
+}
+.BookZoom .MainTitle h2{
+    font-size: 1.875rem;
+    font-weight: 500;
+
+}
+.BookZoom .ZoomNots{
+    margin-bottom: 15px;
+}
+.BookZoom .ZoomNots p{
+    background: #cceafe;
+    border-left: 4px solid #1f95f2;
+    padding: 3px 10px;
+    font-size: 14px;
+    color: #000;
+}
+.BookZoom .ZoomNots p a{
+    text-decoration: underline;
+}
+.BookZoom .TimeTappps{
+    padding-top: 20px;
+
+}
+.TimeTappps .DatTimeBox{
+    display: flex;
+    gap: 15px;
+}
+.BookZoom .TimeTappps .SubTitle{
+margin-bottom: 10px;
+}
+.BookZoom .TimeTappps .SubTitle h2{
+color: #333;
+font-size: 18px;
+font-weight:300;
+margin: 0;
+}
+.BookZoom .TimeTappps .nav{
+    margin-bottom: 15px;
+    gap: 8px;
+}
+.BookZoom .TimeTappps .nav .nav-item{
+    width: auto;
+    flex-grow: unset;
+    flex-basis: auto;
+}
+.BookZoom .TimeTappps .nav .nav-item .nav-link{
+    border: 1px solid #d8dde6;
+    color: #000;
+    height: 45px;
+    padding: 0 55px;
+    line-height: 45px;
+}
+.BookZoom .TimeTappps .nav .nav-item .nav-link.active{
+    background: #1f95f2;
+    border: 1px solid #1f95f2;
+    color: #fff;
+}
+.BookZoom .TimeTappps .tab-content{
+    
+}
+.BookZoom .TimeTappps .tab-content .tab-pane{
+    
+}
+.GroupTimes .TimeItemss{
+    display: inline-block;
+ margin: 5px 5px;
+}
+.GroupTimes .TimeItemss label{
+    position: relative;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    padding: 5px;
+    width: auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 0;
+    padding: 0 30px;
+    color: #333;
+    transition: all .2s ease-in-out;
+}
+.GroupTimes .TimeItemss label span{
+     display: block;
+ width: 100%;
+ height: 100%;
+ background: #f00;
+ border-radius: 50%;
+}
+.GroupTimes .TimeItemss label img{
+     position: absolute;
+ width: 25px;
+ display: none;
+}
+.GroupTimes .TimeItemss input{
+ display: none;
+}
+.GroupTimes .TimeItemss:hover label{
+    border: 1px solid #f1f1f1;
+color: #333;
+background: #f1f1f1;
+}
+.GroupTimes .TimeItemss.active label{
+    border: 1px solid #1f95f2;
+    color: #fff;
+    background: #1f95f2;
+}
+.GroupTimes .TimeItemss.active label img{
+ display: block;
+}
+
+.BookZoom .BooKBtn{
+margin-top: 20px;
+}
+
+.BookZoom .BooKBtn .ep-btn{
+    border-radius: 5px;
+    display: block;
+    width: auto;
+    padding: 14px 55px;
+    font-size: 17px;
+}
+
+
+/* Datepicker */
+.datepicker-dropdown {
+    border-radius: 0;
+    padding: 15px;
+}
+
+.datepicker td,
+.datepicker th {
+    border-radius: 0;
+}
+
+.datepicker .table-condensed > tbody > tr > td,
+.datepicker .table-condensed > tbody > tr > th {
+    padding: 5px 10px;
+    background: #fff0;
+}
+.datepicker .table-condensed > tbody > tr > td.disabled{
+    background: #f000;;
+}
+.datepicker thead tr:last-child {
+    background-color: #f2f2f2;
+}
+.datepicker thead tr:last-child th {
+    border-right: 1px solid #fff;
+}
+
+.datepicker table tr td.new,
+.datepicker table tr td.old {
+    color: #aaa;
+    opacity: 1;
+        pointer-events: none;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled.active:hover,
+.datepicker table tr td.active.disabled.disabled:hover,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled[disabled]:hover,
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active[disabled]:hover,
+.datepicker table tr td.active[disabled] {
+    background: #24ade3;
+}
+
+
+.ClaenderBox {
+    display: block;
+    width: max-content;
+    background: #fff;
+    padding: 0px 0;
+    border: 1px solid #eee;
+    margin-bottom: 16px;
+    border-radius: 16px;
+}
+.datepicker-inline {
+    width: 100%;
+}
+.datepicker .datepicker-switch {
+      pointer-events: none;
+    color: #000;
+    font-size: 20px;
+    font-weight: 500;
+}
+.ClaenderBox .datepicker thead tr:last-child {
+    background-color: #fff0;
+}
+.datepicker .table-condensed > tbody > tr > td,
+.datepicker .table-condensed > tbody > tr > th {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+}
+.datepicker table {
+    width: max-content;
+    margin: auto;
+}
+.datepicker thead tr:last-child th {
+    border-right: 0;
+}
+.datepicker thead tr:last-child th:last-child {
+    border-right: 0;
+}
+.table-condensed > tbody > tr > td,
+.table-condensed > tbody > tr > th,
+.table-condensed > tfoot > tr > td,
+.table-condensed > tfoot > tr > th,
+.table-condensed > thead > tr > td,
+.table-condensed > thead > tr > th {
+    padding: 5px;
+    height: 40px;
+    width: 40px;
+    padding: 0;
+    font-weight: 500;
+        color: #000;
+}
+
+.datepicker table tr td.active.active,
+.datepicker table tr td.active.disabled,
+.datepicker table tr td.active.disabled.active,
+.datepicker table tr td.active.disabled.disabled,
+.datepicker table tr td.active.disabled:active,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active.disabled.active:hover,
+.datepicker table tr td.active.disabled.disabled:hover,
+.datepicker table tr td.active.disabled:hover:active,
+.datepicker table tr td.active.disabled:hover:hover,
+.datepicker table tr td.active.disabled[disabled]:hover,
+.datepicker table tr td.active.disabled[disabled],
+.datepicker table tr td.active:active,
+.datepicker table tr td.active:hover,
+.datepicker table tr td.active.active:hover,
+.datepicker table tr td.active.disabled:hover,
+.datepicker table tr td.active:hover:active,
+.datepicker table tr td.active:hover:hover,
+.datepicker table tr td.active[disabled]:hover,
+.datepicker table tr td.active[disabled] {
+    background: #24ade3;
+    color: #fff;
+}
+
+
+.datepicker table tr td.today{
+    border: 2px solid #24ade3;
+    color: #24ade3 !important;
+    border-radius: 50%;
+    background: #24ade3;
+    background-color: #fff !important;
+    display: inline-block;
+    line-height: 38px;
+    padding: 0;
+    background-image: none;
+}
+
+
+
+
+
+
+.latestBlog{
+
+}
+.latestBlog .Blogitm{
+ display: flex;
+ gap: 16px;
+ align-items: flex-start;   
+ margin-bottom: 10px;
+}
+.latestBlog .Blogitm .BlogImage{
+    display: block;
+    width: 95px;
+    height: 70px;
+    overflow: hidden;
+    border-radius: 8px;
+}
+.latestBlog .Blogitm .BlogImage img{
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.latestBlog .Blogitm .BlogData{
+    
+}
+.latestBlog .Blogitm .BlogData p{
+    font-size: 13px;
+    color: #ccc;
+}
+
+.latestBlog .Blogitm .BlogData h2{
+    font-size: 16px;
+    color: #fff;
+    margin: 0;
+    font-weight: 400;
+}
+
+
+
+
+
+
+

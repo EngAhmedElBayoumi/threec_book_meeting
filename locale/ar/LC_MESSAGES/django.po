@@ -1,0 +1,1544 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-03-08 03:23+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 && n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+
+#: .\demo\views.py:22 .\home\views.py:18
+msgid "Please enter your grade and phone number"
+msgstr "من فضلك ادخل رقم الواتس اب و اختر المرحلة الدراسية"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\change_form.html:8
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage.html:22
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_group.html:25
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_user.html:26
+msgid "Object permissions"
+msgstr "أذونات الكائن"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage.html:10
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_group.html:13
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_user.html:14
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\export.html:17
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import.html:28
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:11
+#: .\env\Lib\site-packages\unfold\templates\admin\app_index.html:15
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\change_password.html:13
+#: .\env\Lib\site-packages\unfold\templates\admin\base.html:23
+#: .\env\Lib\site-packages\unfold\templates\admin\change_form.html:18
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list.html:31
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_confirmation.html:17
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:17
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:9
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_done.html:12
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_form.html:12
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_icon.html:6
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_icon.html:8
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_icon.html:10
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_logo.html:5
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_logo.html:7
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\site_logo.html:9
+#: .\templates\base.html:183 .\templates\base.html:223
+#: .\templates\index.html:157 .\templates\index.html:190
+msgid "Home"
+msgstr "الصفحة الرئيسية"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_group.html:39
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_user.html:40
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:10
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:44
+msgid "Object"
+msgstr "هدف"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_group.html:42
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:15
+msgid "Group"
+msgstr "مجموعة"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_group.html:49
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_user.html:50
+#: .\env\Lib\site-packages\unfold\templates\admin\pagination.html:35
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:10
+msgid "Save"
+msgstr "يحفظ"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\admin\guardian\model\obj_perms_manage_user.html:43
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:33
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:15
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:33
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:38
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:54
+msgid "User"
+msgstr "مستخدم"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:7
+msgid "Group permissions"
+msgstr "أذونات المجموعة"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:25
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:49
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:25
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:49
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:42
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:58
+msgid "Action"
+msgstr "فعل"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:51
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:51
+msgid "Edit"
+msgstr "يحرر"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\group_form.html:67
+msgid "Manage group"
+msgstr "إدارة المجموعة"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:7
+msgid "User permissions"
+msgstr "أذونات المستخدم"
+
+#: .\env\Lib\site-packages\unfold\contrib\guardian\templates\unfold\guardian\user_form.html:67
+msgid "Manage user"
+msgstr "إدارة المستخدم"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\change_form.html:8
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\change_list_export_item.html:4
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\export.html:28
+msgid "Export"
+msgstr "يصدّر"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\change_list_import_item.html:4
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import.html:39
+msgid "Import"
+msgstr "يستورد"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\export.html:41
+#, python-format
+msgid ""
+"\n"
+"                    Export %(len)s selected item.\n"
+"                "
+msgid_plural ""
+"\n"
+"                    Export %(len)s selected items.\n"
+"                "
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\export.html:60
+msgid "This exporter will export the following fields"
+msgstr "سيقوم هذا المصدر بتصدير الحقول التالية"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\export.html:79
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_form.html:21
+msgid "Submit"
+msgstr "يُقدِّم"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_confirm.html:10
+msgid ""
+"Below is a preview of data to be imported. If you are satisfied with the "
+"results, click 'Confirm import'"
+msgstr ""
+"فيما يلي معاينة للبيانات المراد استيرادها.إذا كنت راضيًا عن النتائج ، فانقر "
+"فوق \"تأكيد الاستيراد\""
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_confirm.html:15
+msgid "Confirm import"
+msgstr "تأكيد الاستيراد"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_errors.html:19
+msgid "Line number"
+msgstr "رقم السطر"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_preview.html:22
+msgid "New"
+msgstr "جديد"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_preview.html:24
+msgid "Skipped"
+msgstr "تخطي"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_preview.html:28
+msgid "Update"
+msgstr "تحديث"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:7
+msgid "Some rows failed to validate"
+msgstr "فشلت بعض الصفوف في التحقق من صحة"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:13
+msgid ""
+"Please correct these errors in your data where possible, then reupload it "
+"using the form above."
+msgstr ""
+"يرجى تصحيح هذه الأخطاء في بياناتك حيثما أمكن ، ثم إعادة تحميلها باستخدام "
+"النموذج أعلاه."
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:22
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:40
+msgid "Row"
+msgstr "صف"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:26
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:44
+msgid "Errors"
+msgstr "الأخطاء"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\import_validation.html:65
+msgid "Non field specific"
+msgstr "Non field specific"
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\resource_fields_list.html:6
+msgid "This exporter will export the following fields: "
+msgstr "This exporter will export the following fields: "
+
+#: .\env\Lib\site-packages\unfold\contrib\import_export\templates\admin\import_export\resource_fields_list.html:8
+msgid "This importer will import the following fields: "
+msgstr "This importer will import the following fields: "
+
+#. Translators: Model verbose name and instance representation,
+#. suitable to be an item in a list.
+#: .\env\Lib\site-packages\unfold\contrib\inlines\admin.py:94
+#, python-format
+msgid "%(class_name)s %(instance)s"
+msgstr "%(class_name)s %(instance)s"
+
+#: .\env\Lib\site-packages\unfold\contrib\inlines\admin.py:106
+#, python-format
+msgid ""
+"Deleting %(class_name)s %(instance)s would require deleting the following "
+"protected related objects: %(related_objects)s"
+msgstr ""
+"Deleting %(class_name)s %(instance)s would require deleting the following "
+"protected related objects: %(related_objects)s"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history.html:8
+msgid ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+msgstr ""
+"Choose a date from the list below to revert to a previous version of this "
+"object."
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history.html:16
+msgid "This object doesn't have a change history."
+msgstr "This object doesn't have a change history."
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:22
+#: .\env\Lib\site-packages\unfold\templates\admin\change_form_object_tools.html:6
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:21
+msgid "History"
+msgstr "History"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:26
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\stacked.html:55
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\tabular.html:81
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list_default.html:38
+msgid "View"
+msgstr "View"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:29
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\submit_line.html:9
+msgid "Revert"
+msgstr "Revert"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:48
+msgid ""
+"Press the 'Revert' button below to revert to this version of the object."
+msgstr ""
+"Press the 'Revert' button below to revert to this version of the object."
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_form.html:52
+msgid "Press the 'Change History' button below to edit the history."
+msgstr "Press the 'Change History' button below to edit the history."
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:20
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:56
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:34
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:50
+msgid "Date/time"
+msgstr "Date/time"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:24
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:60
+msgid "Comment"
+msgstr "Comment"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:28
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:64
+msgid "Changed by"
+msgstr "Changed by"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:32
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:78
+msgid "Change reason"
+msgstr "Change reason"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:36
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:82
+msgid "Changes"
+msgstr "Changes"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\object_history_list.html:74
+msgid "None"
+msgstr "None"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\submit_line.html:15
+msgid "Change History"
+msgstr "Change History"
+
+#: .\env\Lib\site-packages\unfold\contrib\simple_history\templates\simple_history\submit_line.html:20
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:34
+msgid "Close"
+msgstr "Close"
+
+#: .\env\Lib\site-packages\unfold\forms.py:44
+msgid "Select action to run"
+msgstr "Select action to run"
+
+#: .\env\Lib\site-packages\unfold\forms.py:102
+msgid ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">this form</a>."
+msgstr ""
+"Raw passwords are not stored, so there is no way to see this user’s "
+"password, but you can change the password using <a href=\"{}\" class=\"text-"
+"primary-600 dark:text-primary-500\">this form</a>."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\actions.html:22
+msgid "Run the selected action"
+msgstr "Run the selected action"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\actions.html:23
+msgid "Run"
+msgstr "Run"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\actions.html:42
+msgid "Click here to select the objects across all pages"
+msgstr "Click here to select the objects across all pages"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\actions.html:43
+#, python-format
+msgid "Select all %(total_count)s %(module_name)s"
+msgstr "Select all %(total_count)s %(module_name)s"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\actions.html:49
+msgid "Clear selection"
+msgstr "Clear selection"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\app_index.html:5
+#: .\env\Lib\site-packages\unfold\templates\admin\base_site.html:3
+#: .\env\Lib\site-packages\unfold\templates\admin\index.html:7
+#: .\env\Lib\site-packages\unfold\templates\unfold\layouts\base.html:11
+msgid "Django site admin"
+msgstr "Django site admin"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\app_index.html:30
+#: .\env\Lib\site-packages\unfold\templates\admin\base_site.html:6
+#: .\env\Lib\site-packages\unfold\templates\admin\index.html:12
+#: .\env\Lib\site-packages\unfold\templates\unfold\layouts\base.html:6
+msgid "Django administration"
+msgstr "Django administration"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\app_list.html:12
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list_default.html:9
+#, python-format
+msgid "Models in the %(name)s application"
+msgstr "Models in the %(name)s application"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\app_list.html:47
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list.html:98
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list_default.html:59
+msgid "You don’t have permission to view or edit anything."
+msgstr "You don’t have permission to view or edit anything."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\add_form.html:7
+msgid ""
+"First, enter a username and password. Then, you’ll be able to edit more user"
+" options."
+msgstr ""
+"First, enter a username and password. Then, you’ll be able to edit more user"
+" options."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\add_form.html:9
+msgid "Enter a username and password."
+msgstr "Enter a username and password."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\change_password.html:25
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\change_password.html:55
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_done.html:15
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_form.html:15
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_form.html:46
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\account_links.html:23
+msgid "Change password"
+msgstr "Change password"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\auth\user\change_password.html:44
+#, python-format
+msgid "Enter a new password for the user <strong>%(username)s</strong>."
+msgstr "Enter a new password for the user <strong>%(username)s</strong>."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_form.html:32
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\add_link.html:5
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\add_link.html:8
+#, python-format
+msgid "Add %(name)s"
+msgstr "Add %(name)s"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_form_object_tools.html:12
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\stacked.html:67
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\tabular.html:89
+msgid "View on site"
+msgstr "View on site"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list.html:99
+msgid "Filters"
+msgstr "Filters"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list_results.html:28
+msgid "Select all rows"
+msgstr "Select all rows"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list_results.html:42
+msgid "Toggle sorting"
+msgstr "Toggle sorting"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list_results.html:50
+msgid "Remove from sorting"
+msgstr "Remove from sorting"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\change_list_results.html:56
+#, python-format
+msgid "Sorting priority: %(priority_number)s"
+msgstr "Sorting priority: %(priority_number)s"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+msgstr ""
+"Deleting the %(object_name)s '%(escaped_object)s' would result in deleting "
+"related objects, but your account doesn't have permission to delete the "
+"following types of objects:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_confirmation.html:53
+#, python-format
+msgid ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
+" following protected related objects:"
+msgstr ""
+"Deleting the %(object_name)s '%(escaped_object)s' would require deleting the"
+" following protected related objects:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_confirmation.html:69
+#, python-format
+msgid ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+msgstr ""
+"Are you sure you want to delete the %(object_name)s \"%(escaped_object)s\"? "
+"All of the following related items will be deleted:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_confirmation.html:76
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:71
+msgid "Objects"
+msgstr "Objects"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:27
+msgid "Delete multiple objects"
+msgstr "Delete multiple objects"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:37
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+msgstr ""
+"Deleting the selected %(objects_name)s would result in deleting related "
+"objects, but your account doesn't have permission to delete the following "
+"types of objects:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:50
+#, python-format
+msgid ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+msgstr ""
+"Deleting the selected %(objects_name)s would require deleting the following "
+"protected related objects:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\delete_selected_confirmation.html:64
+#, python-format
+msgid ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+msgstr ""
+"Are you sure you want to delete the selected %(objects_name)s? All of the "
+"following objects and their related items will be deleted:"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\tabular.html:43
+msgid "Delete?"
+msgstr "Delete?"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\edit_inline\tabular.html:160
+msgid "Remove"
+msgstr "Remove"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\filter.html:5
+#, python-format
+msgid " By %(filter_title)s "
+msgstr " By %(filter_title)s "
+
+#: .\env\Lib\site-packages\unfold\templates\admin\includes\object_delete_summary.html:5
+msgid "Summary"
+msgstr "Summary"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\login.html:31
+msgid "Welcome back to"
+msgstr "Welcome back to"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\login.html:42
+#, python-format
+msgid ""
+"You are authenticated as %(username)s, but are not authorized to access this"
+" page. Would you like to login to a different account?"
+msgstr ""
+"You are authenticated as %(username)s, but are not authorized to access this"
+" page. Would you like to login to a different account?"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\login.html:63
+msgid "Log in"
+msgstr "Log in"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\login.html:72
+msgid "Forgotten your password or username?"
+msgstr "Forgotten your password or username?"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\login.html:84
+msgid "Return to site"
+msgstr "Return to site"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\nav_sidebar.html:17
+msgid "Menu"
+msgstr "Menu"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:81
+msgid "entry"
+msgid_plural "entries"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\unfold\templates\admin\object_history.html:84
+msgid ""
+"This object doesn’t have a change history. It probably wasn’t added via this"
+" admin site."
+msgstr ""
+"This object doesn’t have a change history. It probably wasn’t added via this"
+" admin site."
+
+#: .\env\Lib\site-packages\unfold\templates\admin\pagination.html:28
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\welcomemsg.html:14
+msgid "Show all"
+msgstr "Show all"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\search_form.html:6
+msgid "Type to search"
+msgstr "Type to search"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:23
+msgid "Save and continue editing"
+msgstr "Save and continue editing"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:25
+msgid "Save and view"
+msgstr "Save and view"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:40
+msgid "Save and add another"
+msgstr "Save and add another"
+
+#: .\env\Lib\site-packages\unfold\templates\admin\submit_line.html:46
+msgid "Save as new"
+msgstr "Save as new"
+
+#: .\env\Lib\site-packages\unfold\templates\registration\logged_out.html:11
+msgid "You have been successfully logged out from the administration"
+msgstr "You have been successfully logged out from the administration"
+
+#: .\env\Lib\site-packages\unfold\templates\registration\logged_out.html:16
+msgid "Thanks for spending some quality time with the web site today."
+msgstr "Thanks for spending some quality time with the web site today."
+
+#: .\env\Lib\site-packages\unfold\templates\registration\logged_out.html:20
+msgid "Log in again"
+msgstr "Log in again"
+
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_done.html:26
+msgid "Your password was changed."
+msgstr "Your password was changed."
+
+#: .\env\Lib\site-packages\unfold\templates\registration\password_change_form.html:35
+msgid ""
+"Please enter your old password, for security’s sake, and then enter your new"
+" password twice so we can verify you typed it in correctly."
+msgstr ""
+"Please enter your old password, for security’s sake, and then enter your new"
+" password twice so we can verify you typed it in correctly."
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\change_list_filter.html:9
+msgid "Filter"
+msgstr "Filter"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\change_list_filter.html:16
+msgid "Hide counts"
+msgstr "Hide counts"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\change_list_filter.html:20
+msgid "Show counts"
+msgstr "Show counts"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\change_list_filter.html:29
+msgid "Clear all filters"
+msgstr "Clear all filters"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\change_list_filter.html:57
+msgid "Apply Filters"
+msgstr "Apply Filters"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\account_links.html:17
+msgid "View site"
+msgstr "View site"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\account_links.html:32
+msgid "Log out"
+msgstr "Log out"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\actions_row.html:4
+msgid "More actions"
+msgstr "More actions"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list.html:68
+msgid "All applications"
+msgstr "All applications"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\app_list_default.html:31
+msgid "Add"
+msgstr "Add"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\boolean.html:10
+msgid "True"
+msgstr "True"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\boolean.html:12
+msgid "False"
+msgstr "False"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\delete_submit_line.html:5
+msgid "No, take me back"
+msgstr "No, take me back"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\delete_submit_line.html:9
+msgid "Yes, I’m sure"
+msgstr "Yes, I’m sure"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\display_header.html:10
+msgid "Record picture"
+msgstr "Record picture"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\history.html:9
+msgid "Recent actions"
+msgstr "Recent actions"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\history.html:28
+msgid "Unknown content"
+msgstr "Unknown content"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\messages\errornote.html:6
+msgid "Please correct the error below."
+msgstr "Please correct the error below."
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\messages\errornote.html:8
+msgid "Please correct the errors below."
+msgstr "Please correct the errors below."
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\search.html:18
+msgid "Search apps and models..."
+msgstr "Search apps and models..."
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\search.html:18
+msgid "Filter navigation items"
+msgstr "Filter navigation items"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\tab_list.html:24
+msgid "General"
+msgstr "General"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\theme_switch.html:15
+msgid "Dark"
+msgstr "Dark"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\theme_switch.html:22
+msgid "Light"
+msgstr "Light"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\theme_switch.html:29
+msgid "System"
+msgstr "System"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\welcomemsg.html:14
+#, python-format
+msgid "%(counter)s result"
+msgid_plural "%(counter)s results"
+msgstr[0] ""
+msgstr[1] ""
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\welcomemsg.html:14
+#, python-format
+msgid "%(full_result_count)s total"
+msgstr "%(full_result_count)s total"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\helpers\welcomemsg.html:22
+msgid "Welcome,"
+msgstr "Welcome,"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\clearable_file_input.html:6
+msgid "Image preview"
+msgstr "Image preview"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\clearable_file_input.html:24
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\clearable_file_input_small.html:17
+msgid "Choose file to upload"
+msgstr "Choose file to upload"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\related_widget_wrapper.html:16
+#, python-format
+msgid "Change selected %(model)s"
+msgstr "Change selected %(model)s"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\related_widget_wrapper.html:26
+#, python-format
+msgid "Add another %(model)s"
+msgstr "Add another %(model)s"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\related_widget_wrapper.html:35
+#, python-format
+msgid "View selected %(model)s"
+msgstr "View selected %(model)s"
+
+#: .\env\Lib\site-packages\unfold\templates\unfold\widgets\related_widget_wrapper.html:45
+#, python-format
+msgid "Delete selected %(model)s"
+msgstr "Delete selected %(model)s"
+
+#: .\env\Lib\site-packages\unfold\templatetags\unfold_list.py:109
+msgid "Select all objects on this page for an action"
+msgstr "Select all objects on this page for an action"
+
+#: .\env\Lib\site-packages\unfold\widgets.py:455
+msgid "Date"
+msgstr "Date"
+
+#: .\env\Lib\site-packages\unfold\widgets.py:549
+msgid "Select currency"
+msgstr "Select currency"
+
+#: .\templates\base.html:15 .\templates\index.html:13
+msgid "3 School Coding"
+msgstr "3 School Coding"
+
+#: .\templates\base.html:187 .\templates\base.html:328
+#: .\templates\index.html:160 .\templates\index.html:1351
+msgid "About Us"
+msgstr "عن الموقع"
+
+#: .\templates\base.html:190 .\templates\base.html:230
+#: .\templates\base.html:414 .\templates\index.html:163
+#: .\templates\index.html:196 .\templates\index.html:1472
+msgid "Contact Us"
+msgstr "تواصل معنا"
+
+#: .\templates\base.html:227 .\templates\index.html:193
+msgid "About us"
+msgstr "عن الموقع"
+
+#: .\templates\base.html:235 .\templates\index.html:203
+msgid "Read More "
+msgstr "المزيد"
+
+#: .\templates\base.html:290 .\templates\index.html:1309
+msgid "It is a long established fact that a reader will be distracted"
+msgstr "من المعروف منذ زمن طويل أن القارئ سيتشتت"
+
+#: .\templates\base.html:298 .\templates\index.html:1318
+msgid "Address"
+msgstr "العنوان"
+
+#: .\templates\base.html:299 .\templates\index.html:1320
+msgid "66 Broklyant, New York India"
+msgstr "٦٦ بروكليانت، نيويورك الهند"
+
+#: .\templates\base.html:307 .\templates\index.html:1329
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: .\templates\base.html:308 .\templates\index.html:1331
+msgid "012 345 678 9101"
+msgstr "٠١٢ ٣٤٥ ٦٧٨ ٩١٠١"
+
+#: .\templates\base.html:316 .\templates\index.html:1339
+msgid "About Company"
+msgstr "عن الشركة"
+
+#: .\templates\base.html:319 .\templates\index.html:1342
+msgid "Service"
+msgstr "الخدمة"
+
+#: .\templates\base.html:322 .\templates\index.html:1127
+#: .\templates\index.html:1345
+msgid "FAQ"
+msgstr "الأسئلة الشائعة"
+
+#: .\templates\base.html:325 .\templates\index.html:1348
+msgid "Testimonial"
+msgstr "آراء العملاء"
+
+#: .\templates\base.html:331 .\templates\index.html:1354
+msgid "Portfolio"
+msgstr "معرض الأعمال"
+
+#: .\templates\base.html:338 .\templates\index.html:1361
+msgid "Services"
+msgstr "الخدمات"
+
+#: .\templates\base.html:341
+msgid "Reliable Rentals "
+msgstr "تأجير موثوق"
+
+#: .\templates\base.html:344
+msgid "Golden Key Properties "
+msgstr "عقارات المفتاح الذهبي"
+
+#: .\templates\base.html:347
+msgid "Swift Home Sales "
+msgstr "مبيعات المنازل السريعة"
+
+#: .\templates\base.html:350
+msgid "Elite Realty Services "
+msgstr "خدمات العقارات النخبة"
+
+#: .\templates\base.html:353
+msgid "Dream Property Solutions "
+msgstr "حلول العقارات المثالية"
+
+#: .\templates\base.html:360 .\templates\index.html:1427
+msgid "Newsletter"
+msgstr "النشرة الإخبارية"
+
+#: .\templates\base.html:368 .\templates\index.html:1433
+msgid "Follow Us"
+msgstr "تابعنا"
+
+#: .\templates\base.html:400
+msgid "© 2024 | All Rights Reserved"
+msgstr "© ٢٠٢٤ | جميع الحقوق محفوظة"
+
+#: .\templates\base.html:408 .\templates\index.html:1466
+msgid "Terms & Condition"
+msgstr "الشروط والأحكام"
+
+#: .\templates\base.html:411 .\templates\index.html:1469
+msgid "Privacy Policy"
+msgstr "سياسة الخصوصية"
+
+#: .\templates\bookzoom.html:36
+msgid "Gladys"
+msgstr "جلاديس"
+
+#: .\templates\bookzoom.html:37
+msgid "Student | Grade 8"
+msgstr "طالب | الصف الثامن"
+
+#: .\templates\bookzoom.html:45
+msgid "Book a free lesson to enter the magical world of coding"
+msgstr "احجز درسًا مجانيًا للدخول إلى عالم البرمجة السحري"
+
+#: .\templates\bookzoom.html:48
+msgid ""
+"Your timezone is Africa/Cairo (GMT +02:00). Your current time is 06:35 PM."
+msgstr ""
+"المنطقة الزمنية الخاصة بك هي أفريقيا/القاهرة (توقيت جرينتش +02:00). الوقت "
+"الحالي هو 06:35 مساءً."
+
+#: .\templates\bookzoom.html:54
+msgid "Select Date"
+msgstr "اختر التاريخ"
+
+#: .\templates\bookzoom.html:62
+msgid "Select a time (Africa/Cairo)"
+msgstr "اختر الوقت (أفريقيا/القاهرة)"
+
+#: .\templates\bookzoom.html:73
+msgid "Book now"
+msgstr "احجز الآن"
+
+#: .\templates\bookzoom.html:246
+msgid "No available time"
+msgstr "لا يوجد وقت متاح"
+
+#: .\templates\index.html:337
+msgid "Inspiring Today’s Mindset"
+msgstr "إلهام عقلية اليوم"
+
+#: .\templates\index.html:339
+msgid ""
+"Creating Tomorrow’s Tech Leaders Interactive Online Coding & AI Classes "
+"(Grades 1-12) Accredited curriclums based on real world Projects Most "
+"Experts instructors , from the comfort of home"
+msgstr ""
+"إنشاء دروس و AI Teench على الإنترنت التفاعلية للتكنولوجيا (الصفوف 1-12) في "
+"الغد ، تعتمد على معظم مدربي الخبراء في العالم الحقيقي ، من راحة المنزل"
+
+#: .\templates\index.html:342
+msgid "Explore Now "
+msgstr "استكشف الآن"
+
+#: .\templates\index.html:350
+msgid "Hurry Up! The slots are filling fast"
+msgstr "أسرع! الأماكن تمتلئ بسرعة"
+
+#: .\templates\index.html:359
+msgid "Enter your WhatsApp phone number"
+msgstr "من فضلك ادخل رقم الواتس اب و اختر المرحلة الدراسية"
+
+#: .\templates\index.html:367
+msgid "Select grade/class"
+msgstr "اختر الصف/الفصل"
+
+#: .\templates\index.html:370
+msgid "Grade 1"
+msgstr "الصف الأول"
+
+#: .\templates\index.html:373
+msgid "Grade 2"
+msgstr "الصف الثاني"
+
+#: .\templates\index.html:376
+msgid "Grade 3"
+msgstr "الصف الثالث"
+
+#: .\templates\index.html:379
+msgid "Grade 4"
+msgstr "الصف الرابع"
+
+#: .\templates\index.html:382
+msgid "Grade 5"
+msgstr "الصف الخامس"
+
+#: .\templates\index.html:385
+msgid "Grade 6"
+msgstr "الصف السادس"
+
+#: .\templates\index.html:388
+msgid "Grade 7"
+msgstr "الصف السابع"
+
+#: .\templates\index.html:391
+msgid "Grade 8"
+msgstr "الصف الثامن"
+
+#: .\templates\index.html:394
+msgid "Grade 9"
+msgstr "الصف التاسع"
+
+#: .\templates\index.html:397
+msgid "Grade 10"
+msgstr "الصف العاشر"
+
+#: .\templates\index.html:400
+msgid "Grade 11"
+msgstr "الصف الحادي عشر"
+
+#: .\templates\index.html:403
+msgid "Grade 12"
+msgstr "الصف الثاني عشر"
+
+#: .\templates\index.html:410
+msgid "Try a free class"
+msgstr "جرب درساً مجانياً"
+
+#: .\templates\index.html:422
+msgid "1000+ slots booked in last 24 hours"
+msgstr "+١٠٠٠ حجز في آخر ٢٤ ساعة"
+
+#: .\templates\index.html:427
+msgid ""
+"By signing up, you agree to the Terms of Service and Privacy Policy. You "
+"also agree that you have parental consent. Important updates will be sent "
+"via WhatsApp."
+msgstr ""
+"بالتسجيل، أنت توافق على شروط الخدمة وسياسة الخصوصية. كما توافق على حصولك على"
+" موافقة الوالدين. سيتم إرسال التحديثات المهمة عبر واتساب."
+
+#: .\templates\index.html:450
+msgid "2"
+msgstr "٢"
+
+#: .\templates\index.html:450 .\templates\index.html:650
+#: .\templates\index.html:664 .\templates\index.html:678
+msgid "k+"
+msgstr "ألف+"
+
+#: .\templates\index.html:452
+msgid "Full Time Student"
+msgstr "طالب بدوام كامل"
+
+#: .\templates\index.html:461
+msgid "Know About Us"
+msgstr "تعرف علينا"
+
+#: .\templates\index.html:462
+msgid "Why Join 3C?"
+msgstr "لماذا تنضم إلى 3C؟"
+
+#: .\templates\index.html:464
+msgid ""
+"3C offers your child the opportunity to acquire essential coding skills and "
+"build foundational programming projects that every programmer should be able"
+" to create. Your child will gain hands-on experience with the same "
+"programming languages used by professionals, empowering them to pursue their"
+" dream career path."
+msgstr ""
+"يقدم 3C لطفلك فرصة اكتساب مهارات البرمجة الأساسية وبناء مشاريع برمجية أساسية"
+" يجب أن يكون كل مبرمج قادراً على إنشائها. سيتمكن طفلك من اختيار مسار حياته "
+"المهني المفضل، وتعلم نفس لغات البرمجة التي يستخدمها المحترفون. يفخر 3C "
+"بتقديم المميزات التالية:"
+
+#: .\templates\index.html:473
+msgid "Live Online Sessions"
+msgstr "جلسات مباشرة عبر الإنترنت"
+
+#: .\templates\index.html:475
+msgid ""
+"Choose between group or private lessons tailored to your child’s needs."
+msgstr "اختر بين الدروس الجماعية أو الخاصة المصممة حسب احتياجات طفلك"
+
+#: .\templates\index.html:484
+msgid "Simplified and Gamified Content"
+msgstr "محتوى مبسط ومحول إلى ألعاب"
+
+#: .\templates\index.html:486
+msgid ""
+"Top-Ranked, In-Demand Tracks with Simplified Content high-demand tech "
+"fields. Based on global best practices, we make learning the most relevant "
+"skills simple and enjoyable."
+msgstr ""
+"المسارات ذات المرتبة العليا ، تحت الطلب مع حقول التكنولوجيا عالية الطلب "
+"محتوى عالي الطلب.استنادًا إلى أفضل الممارسات العالمية ، نجعل تعلم المهارات "
+"الأكثر صلة بسيطة وممتعة."
+
+#: .\templates\index.html:495
+msgid "Expert Instructors"
+msgstr "مدربون خبراء"
+
+#: .\templates\index.html:497
+msgid ""
+"Experienced teachers will guide your child in either English or Arabic."
+msgstr "مدرسون ذوو خبرة سيوجهون طفلك باللغة الإنجليزية أو العربية"
+
+#: .\templates\index.html:506
+msgid "Long-Term Career Plan"
+msgstr "خطة مهنية طويلة المدى"
+
+#: .\templates\index.html:508
+msgid ""
+"Our comprehensive curriculum provides a clear roadmap, helping your child "
+"explore future career opportunities in tech. After-Session Guidance"
+msgstr ""
+"منهجنا الشامل يوفر خارطة طريق واضحة، تساعد طفلك على استكشاف الفرص المهنية "
+"المستقبلية في مجال التكنولوجيا"
+
+#: .\templates\index.html:517
+msgid "After-Session Guidance"
+msgstr "توجيه ما بعد الجلسة"
+
+#: .\templates\index.html:519
+msgid ""
+"Continuous support to help reinforce and enhance your child's coding "
+"performance."
+msgstr "دعم مستمر لمساعدة وتعزيز تعلم طفلك"
+
+#: .\templates\index.html:525
+msgid "Book Now "
+msgstr "احجز الآن"
+
+#: .\templates\index.html:540 .\templates\index.html:573
+msgid "Our Accreditations"
+msgstr "اعتماداتنا"
+
+#: .\templates\index.html:541 .\templates\index.html:574
+msgid "The Most "
+msgstr "الأكثر"
+
+#: .\templates\index.html:541 .\templates\index.html:574
+msgid "Accredited"
+msgstr "مدرسة معتمدة"
+
+#: .\templates\index.html:541 .\templates\index.html:574
+msgid " School in the Middle East ISO 21001, STEM"
+msgstr "في الشرق الأوسط ISO 21001, STEM, Academeon"
+
+#: .\templates\index.html:589
+msgid "Comprehensive Approach"
+msgstr "نهج شامل"
+
+#: .\templates\index.html:591
+msgid ""
+"Our unique methodology combines coding, AI, problem-solving, and business "
+"skills. This holistic approach not only equips your child with technical "
+"expertise but also nurtures a mindset capable of imagining and building "
+"innovative, real-world solutions."
+msgstr ""
+"منهجيتنا الفريدة تجمع بين البرمجة والذكاء الاصطناعي وحل المشكلات ومهارات "
+"الأعمال. هذا النهج الشامل لا يزود طفلك بالخبرة التقنية فحسب، بل يغرس أيضاً "
+"عقلية قادرة على تخيل وبناء حلول مبتكرة للعالم الحقيقي"
+
+#: .\templates\index.html:599
+msgid "Aftersession Guidance"
+msgstr "توجيه ما بعد الجلسة"
+
+#: .\templates\index.html:601
+msgid ""
+"Our post-session guidance not only maximizes children's learning outcomes "
+"but also enhances their research and self-learning skills. Recognizing the "
+"significance of the after-session phase, we believe it is the key to "
+"fostering independent learners, ensuring sustained growth beyond the "
+"classroom."
+msgstr ""
+"لا يزيد إرشادات ما بعد الجلسة من نتائج تعلم الأطفال فحسب ، بل تعزز أيضًا "
+"مهاراتهم في مجال الأبحاث والتعلم الذاتي.إدراكًا لأهمية مرحلة ما بعد الجلسة ،"
+" نعتقد أنه هو مفتاح تعزيز المتعلمين المستقلين ، وضمان نمو مستمر خارج الفصل "
+"الدراسي."
+
+#: .\templates\index.html:609
+msgid "Expert CS Teacher"
+msgstr "مدرس خبير في علوم الحاسب الآلي"
+
+#: .\templates\index.html:612
+msgid ""
+"Expert academic team ignites children's passions, ensuring a high-quality "
+"educational journey, guided by professional management committed to "
+"achieving goals"
+msgstr ""
+"يشعل الفريق الأكاديمي الخبير مشاعر الأطفال ، مما يضمن رحلة تعليمية عالية "
+"الجودة ، تسترشد بالإدارة المهنية الملتزمة بتحقيق الأهداف"
+
+#: .\templates\index.html:636
+msgid "10"
+msgstr "١٠"
+
+#: .\templates\index.html:636
+msgid "+"
+msgstr "+"
+
+#: .\templates\index.html:638
+msgid "Years of Experience"
+msgstr "سنوات من الخبرة"
+
+#: .\templates\index.html:650
+msgid "100"
+msgstr "١٠٠"
+
+#: .\templates\index.html:652
+msgid "Happy Parents"
+msgstr "أولياء أمور سعداء"
+
+#: .\templates\index.html:664
+msgid "300"
+msgstr "٣٠٠"
+
+#: .\templates\index.html:666
+msgid "Hours of Coding"
+msgstr "ساعات من البرمجة"
+
+#: .\templates\index.html:678
+msgid "50"
+msgstr "٥٠"
+
+#: .\templates\index.html:680
+msgid "Graduates"
+msgstr "خريجون"
+
+#: .\templates\index.html:696
+msgid "Our Developer Tools in One Curriculum"
+msgstr "+٤٨ أداة تطوير احترافية في منهج واحد"
+
+#: .\templates\index.html:697
+msgid "Explore our curriculum packed with over "
+msgstr "استكشف منهجنا المليء بأكثر من"
+
+#: .\templates\index.html:697
+msgid "Our"
+msgstr "Our"
+
+#: .\templates\index.html:697
+msgid ""
+" tools and resources, providing your child with a full tech-stack "
+"experience."
+msgstr "أدوات وموارد، تزود طفلك بتجربة تقنية متكاملة"
+
+#: .\templates\index.html:709
+msgid "python and data science"
+msgstr "بيثون وعلوم البيانات"
+
+#: .\templates\index.html:720
+msgid "Ai & Machine learning"
+msgstr "منظمة العفو الدولية والتعلم الآلي"
+
+#: .\templates\index.html:731
+msgid "Web "
+msgstr "الويب"
+
+#: .\templates\index.html:731
+msgid " Development"
+msgstr "تطوير"
+
+#: .\templates\index.html:742
+msgid "Mobile App development"
+msgstr "تطوير تطبيقات الهاتف المحمول"
+
+#: .\templates\index.html:753
+msgid "Games 2D & 3D"
+msgstr "الألعاب 2D و 3D"
+
+#: .\templates\index.html:764
+msgid "UI & UX"
+msgstr "ui & ux"
+
+#: .\templates\index.html:783
+msgid "Our Students"
+msgstr "طلابنا"
+
+#: .\templates\index.html:784
+msgid "Meet Our "
+msgstr "تعرف على"
+
+#: .\templates\index.html:784
+msgid "Students"
+msgstr "طلابنا"
+
+#: .\templates\index.html:786
+msgid ""
+"At 3C, your child will learn programming using cutting-edge techniques. "
+"Following in the footsteps of professionals, they will have the opportunity "
+"to design projects independently. Along with coding, they will also gain "
+"valuable skills in areas like marketing, human resources, critical thinking,"
+" and more."
+msgstr ""
+"في 3C، سيتعلم طفلك البرمجة باستخدام تقنيات متطورة. على خطى المحترفين، ستتاح "
+"له الفرصة لتصميم المشاريع بشكل مستقل. إلى جانب البرمجة، سيكتسب أيضاً مهارات "
+"قيمة في مجالات مثل التسويق والموارد البشرية والتفكير النقدي والمزيد"
+
+#: .\templates\index.html:802
+msgid "Bessie Cooper"
+msgstr "بيسي كوبر"
+
+#: .\templates\index.html:804
+msgid "Mentor"
+msgstr "مُرشِد"
+
+#: .\templates\index.html:835
+msgid "Arlene McCoy"
+msgstr "ارلين ماكوي"
+
+#: .\templates\index.html:837
+msgid "Senior Mentor"
+msgstr "مرشد أول"
+
+#: .\templates\index.html:868
+msgid "Brooklyn Simmons"
+msgstr "بروكلين سيمونز"
+
+#: .\templates\index.html:870
+msgid "Assistant Teacher"
+msgstr "مدرس مساعد"
+
+#: .\templates\index.html:910
+msgid "Meet our "
+msgstr "تعرف على"
+
+#: .\templates\index.html:910
+msgid "Parents"
+msgstr "أولياء أمور سعداء"
+
+#: .\templates\index.html:925
+msgid "Jane Cooper"
+msgstr "جين كوبر"
+
+#: .\templates\index.html:939
+msgid "Kane Saan"
+msgstr "كين سان"
+
+#: .\templates\index.html:953
+msgid "Jack Win"
+msgstr "جاك وين"
+
+#: .\templates\index.html:970 .\templates\index.html:972
+msgid "Pricing"
+msgstr "الأسعار"
+
+#: .\templates\index.html:972 .\templates\index.html:1129
+msgid "Study Aids to"
+msgstr "مساعدات دراسية ل"
+
+#: .\templates\index.html:973 .\templates\index.html:1130
+msgid "Your Learning"
+msgstr "تعلمك"
+
+#: .\templates\index.html:990
+msgid "3 months Plan"
+msgstr "3 months Plan"
+
+#: .\templates\index.html:992
+msgid "20.7$"
+msgstr "٢٠٫٧ دولار"
+
+#: .\templates\index.html:997
+msgid "3 months membership"
+msgstr "عضوية ٣ أشهر"
+
+#: .\templates\index.html:1000 .\templates\index.html:1034
+#: .\templates\index.html:1068
+msgid "Compilation Certificate"
+msgstr "شهادة إتمام"
+
+#: .\templates\index.html:1003 .\templates\index.html:1037
+#: .\templates\index.html:1071
+msgid "Technical Guidance"
+msgstr "توجيه تقني"
+
+#: .\templates\index.html:1006 .\templates\index.html:1040
+#: .\templates\index.html:1074
+msgid "Limited Group"
+msgstr "مجموعة محدودة"
+
+#: .\templates\index.html:1009
+msgid "1 Level Completion"
+msgstr "1-إكمال المستوى"
+
+#: .\templates\index.html:1013 .\templates\index.html:1050
+#: .\templates\index.html:1084
+msgid "Buy Now"
+msgstr "اشتري الآن"
+
+#: .\templates\index.html:1024
+msgid "6 Months Plan"
+msgstr "تجميد لمدة 6 أشهر"
+
+#: .\templates\index.html:1026
+msgid "40.5$"
+msgstr "٤٠٫٥ دولار"
+
+msgid "6 months membership"
+msgstr "عضوية 6 أشهر"
+
+#: .\templates\index.html:1043
+msgid "2 Level Completion"
+msgstr "إكمال المستوى الثاني"
+
+#: .\templates\index.html:1046
+msgid "3 Months Freeze"
+msgstr "تجميد لمدة 3 أشهر"
+
+#: .\templates\index.html:1061
+msgid "12 months Plan"
+msgstr "خطة 12 شهرًا"
+
+#: .\templates\index.html:1063
+msgid "50.7$"
+msgstr "٥٠٫٧ دولار"
+
+#: .\templates\index.html:1077
+msgid "4 Levels Completion"
+msgstr "إكمال 4 مستويات"
+
+#: .\templates\index.html:1080
+msgid "6 Months Freeze"
+msgstr "تجميد لمدة 6 أشهر"
+
+#: .\templates\index.html:1098
+msgid "Give your child chance"
+msgstr "امنح طفلك فرصة"
+
+#: .\templates\index.html:1100
+msgid ""
+"For over 9 years, 3C has been the #1 platform in the Middle East and Africa "
+"for coding and AI education. We combine coding, AI, and entrepreneurship to "
+"build the leaders of tomorrow. Our curriculum teaches kids not only how to "
+"code but also helps them adapt to change and develop a growth mindset, "
+"empowering them to thrive in any environment."
+msgstr ""
+"لأكثر من ٩ سنوات، كانت 3C المنصة رقم ١ في الشرق الأوسط وأفريقيا لتعليم "
+"البرمجة والذكاء الاصطناعي. نحن نجمع بين البرمجة والذكاء الاصطناعي وريادة "
+"الأعمال لبناء قادة الغد. منهجنا يعلم الأطفال ليس فقط كيفية البرمجة ولكن "
+"أيضاً يساعدهم على التكيف مع التغيير وتطوير عقلية النمو، مما يمكنهم من النجاح"
+" في أي بيئة"
+
+#: .\templates\index.html:1103
+msgid ""
+"Accredited with ISO 21001 and STEM, we are the most trusted platform for "
+"coding and AI education, setting the standard for excellence."
+msgstr ""
+"حصلنا على الاعتماد من ISO 21001 وSTEM، ونحن المنصة الأكثر ثقة لتعليم البرمجة"
+" والذكاء الاصطناعي، ونضع معيارًا للتميز."
+
+#: .\templates\index.html:1129
+msgid "Questions"
+msgstr "أسئلة "
+
+#: .\templates\index.html:1129 .\templates\index.html:1204
+msgid " "
+msgstr " "
+
+#: .\templates\index.html:1145
+msgid "Frequently Asked Questions and Answers"
+msgstr "الأسئلة الشائعة والإجابات إيجاد الحلول"
+
+#: .\templates\index.html:1146
+msgid "Find Solutions"
+msgstr "البحث عن الحلول"
+
+#: .\templates\index.html:1152
+msgid "01"
+msgstr "٠١"
+
+#: .\templates\index.html:1152
+msgid "What are the benefits of education?"
+msgstr "ما هي فوائد التعليم؟"
+
+#: .\templates\index.html:1156 .\templates\index.html:1167
+#: .\templates\index.html:1178
+msgid ""
+"The generated is therefore always free from repetition is the injected "
+"humour or words etc."
+msgstr ""
+"إن الناتج يكون دائمًا خاليًا من التكرار وهو عبارة عن الفكاهة أو الكلمات وما "
+"إلى ذلك."
+
+#: .\templates\index.html:1163
+msgid "02"
+msgstr "٢"
+
+#: .\templates\index.html:1163
+msgid "How can I find the program for me?"
+msgstr "كيف يمكنني العثور على البرنامج المناسب لي؟"
+
+#: .\templates\index.html:1174
+msgid "03"
+msgstr "03"
+
+#: .\templates\index.html:1174
+msgid "Can I get financial for my education?"
+msgstr "هل يمكنني الحصول على تمويل لتعليمي؟"
+
+#: .\templates\index.html:1203
+msgid "Our Blogs"
+msgstr "مدوناتنا"
+
+#: .\templates\index.html:1204
+msgid "Read Our Latest"
+msgstr "اقرأ أحدث"
+
+#: .\templates\index.html:1204
+msgid "Blogs"
+msgstr "المدونات"
+
+#: .\templates\index.html:1204
+msgid "Posts Discover"
+msgstr "اكتشف المنشورات"
+
+#: .\templates\index.html:1215 .\templates\index.html:1243
+#: .\templates\index.html:1271
+msgid "25"
+msgstr "٢٥"
+
+#: .\templates\index.html:1216 .\templates\index.html:1244
+#: .\templates\index.html:1272
+msgid "Dec"
+msgstr "ديسمبر"
+
+#: .\templates\index.html:1220 .\templates\index.html:1248
+#: .\templates\index.html:1276 .\templates\index.html:1393
+#: .\templates\index.html:1405 .\templates\index.html:1417
+msgid "Mirpur Bangladesh"
+msgstr "ميربور بنغلاديش"
+
+#: .\templates\index.html:1223
+msgid "Education foundation"
+msgstr "أساس التعليم"
+
+#: .\templates\index.html:1225 .\templates\index.html:1253
+#: .\templates\index.html:1281
+msgid "Education is the key to stude Unlock your horizons education"
+msgstr "التعليم هو مفتاح النجاح افتح آفاقك التعليمية"
+
+#: .\templates\index.html:1229 .\templates\index.html:1257
+#: .\templates\index.html:1285
+msgid "Read More"
+msgstr "المزيد"
+
+#: .\templates\index.html:1251 .\templates\index.html:1395
+#: .\templates\index.html:1407 .\templates\index.html:1419
+msgid "Introduction to Psychology"
+msgstr "مقدمة في علم النفس"
+
+#: .\templates\index.html:1279
+msgid "Principles of Economics"
+msgstr "مبادئ الاقتصاد"
+
+#: .\templates\index.html:1364
+msgid "Reliable Rentals"
+msgstr "تأجير موثوق"
+
+#: .\templates\index.html:1367
+msgid "Golden Key Properties"
+msgstr "عقارات المفتاح الذهبي"
+
+#: .\templates\index.html:1370
+msgid "Swift Home Sales"
+msgstr "مبيعات المنازل السريعة"
+
+#: .\templates\index.html:1373
+msgid "Elite Realty Services"
+msgstr "خدمات العقارات النخبة"
+
+#: .\templates\index.html:1376
+msgid "Dream Property Solutions"
+msgstr "حلول العقارات المثالية"
+
+#: .\templates\index.html:1383
+msgid "Latest Blog"
+msgstr "Latest Blog"
+
+#: .\templates\index.html:1459
+msgid "2024 | All Rights Reserved"
+msgstr "© ٢٠٢٤ | جميع الحقوق محفوظة"
+
+msgid "Middle School"
+msgstr "مدرسة معتمدة"

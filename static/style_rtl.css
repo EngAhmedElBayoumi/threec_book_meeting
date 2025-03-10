@@ -1,0 +1,125 @@
+/* Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap");
+
+/* Custom Variable Colors */
+:root {
+  --ep-font-family: "Tajawal", serif;
+}
+
+body{
+    direction: rtl;
+    font-family: "Tajawal", serif;
+}
+h1, h1 a, h2, h2 a, h3, h3 a, h4, h4 a, h5, h5 a, h6, h6 a {
+    font-family: "Tajawal", serif;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.owl-carousel{
+    direction: ltr;
+}
+
+.ep-event__card{
+    direction: rtl;
+}
+.ep-team__card{
+    direction: rtl;
+}
+.ep-pricing__icon {
+    left: 0;
+    right: auto;
+    border-radius: 20px 0px;
+}
+.ep-faq__img {
+    padding-left: 60px;
+    padding-right: 0;
+}
+.ep-faq__accordion-item--style2 .accordion-button {
+    direction: rtl;
+    text-align: start;
+    padding-left: 80px;
+    padding-right: 15px;
+}
+.ep-faq__accordion-item .accordion-button span{
+    margin-left: 18px;
+    margin-right: 0;
+}
+.ep-faq__accordion-body {
+    padding: 20px 30px 30px 80px;
+}
+.ep-faq__accordion-item .accordion-button::after {
+right: auto;
+    left: 20px;
+}
+.ep-blog__date {
+    right:auto;
+    left: 40px;
+}
+.ep-footer__newsletter button{
+    left: 0;
+    right: auto;
+}
+.ep-footer__bottom-link {
+    text-align: end;
+}
+.ep-footer__pattern {
+    left: 0;
+    right: auto;
+    transform: rotateY(180deg);
+}
+.nice-select::after {
+    left: 18px;
+    right: auto;
+}
+.nice-select .option{
+    text-align: start;
+}
+.iti--allow-dropdown .iti__flag-container, .iti--separate-dial-code .iti__flag-container {
+    right: 0;
+    left: auto;
+}
+.iti__country-list {
+    right: 0;
+    left: auto;
+    direction: ltr;
+}
+.iti--separate-dial-code .iti__selected-dial-code {
+    margin-left: 6px;
+    margin-right: 6px;
+}
+.iti--separate-dial-code .iti__selected-flag {
+
+    border-right: 0px solid #e7e7eb;
+    border-left: 1px solid #e7e7eb;
+ 
+}
+.BookFormBox .FormBook .form-group .form-control {
+    padding-left: 15px !important;
+}
+
+
+
+.fi-rs-arrow-small-right, .fi-br-angle-double-small-right{
+    transform: rotateY(180deg);
+}
+.ep-funfact__card--style2 .ep-funfact__info {
+    text-align: right;
+}
+
+.ep-category__info h3 {
+    font-size: 16px;
+}
+.ep-footer__social ul li {
+    margin-right: 0px;
+    margin-left: 16px;
+}

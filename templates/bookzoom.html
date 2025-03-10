@@ -1,0 +1,283 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load i18n %}
+{% block style %}
+<style>
+    .active_time {
+      background-color: #ffc107;
+      color: #fff;
+    }
+  </style>
+{% endblock %}
+
+
+{% block content %}
+
+    <div id="smooth-wrapper">
+      <div id="smooth-content">
+        <main>
+          <!-- Start About Area -->
+          <section class="ep-about ep-section section-gap position-relative">
+            <div class="ep-about__shape updown-ani">
+              <img src="{% static 'assets/images/about/about-1/circle-shape.svg' %}" alt="circle-shape" />
+            </div>
+            <div class="container ep-container">
+              <div class="row align-items-center">
+                <div class="col-lg-5 col-12">
+                  <div class="ep-section__img position-relative">
+                    <div class="ep-section__img-shape rotate-ani">
+                      <img src="{% static 'assets/images/about/about-1/pattern-shape.svg' %}" alt="pattern-shape" />
+                    </div>
+                    <div class="ep-section__img-main">
+                      <img src="{% static 'assets/images/about/about-1/about-img.png' %}" alt="about-img" />
+                    </div>
+                    <div class="overview-card updown-ani">
+                      <div class="overview-card__info">
+                        <h4>{% trans 'Gladys' %}</h4>
+                        <p>{% trans 'Student | Grade 8' %}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-7 col-12">
+                  <div class="BookZoom">
+                    <div class="MainTitle">
+                      <h2>{% trans 'Book a free lesson to enter the magical world of coding' %}</h2>
+                    </div>
+                    <div class="ZoomNots">
+                      <p>{% trans 'Your timezone is Africa/Cairo (GMT +02:00). Your current time is 06:35 PM.' %}</p>
+                    </div>
+                    <div class="TimeTappps">
+                      <div class="DatTimeBox">
+                        <div class="ChoseDay">
+                          <div class="SubTitle">
+                            <h2>{% trans 'Select Date' %}</h2>
+                          </div>
+                          <div class="ClaenderBox">
+                            <div data-provide="datepicker-inline" class="bootstrap-datepicker-inline"></div>
+                          </div>
+                        </div>
+                        <div class="ChoseTime">
+                          <div class="SubTitle">
+                            <h2>{% trans 'Select a time (Africa/Cairo)' %}</h2>
+                          </div>
+                          <div class="GroupTimes" id="GroupTimes"></div>
+                        </div>
+                      </div>
+                      <form method="post" id="bookingform" action="{% url 'demo:booking' %}">
+                        {% csrf_token %}
+                        <input type="hidden" name="date" id="date_input" />
+                        <input type="hidden" name="from_time" id="from_time" />
+                        <input type="hidden" name="to_time" id="to_time" />
+                        <div class="BooKBtn">
+                          <button type="submit" id="submitbtn" class="ep-btn" disabled>{% trans 'Book now' %}</button>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- End Start About Area -->
+        </main>
+        {% endblock content %}
+        
+        {% block script %}
+ <!-- Jquery JS -->
+ <script src="{% static 'assets/plugins/js/jquery.min.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/jquery-migrate.js' %}"></script>
+
+ <!-- Bootstrap JS -->
+ <script src="{% static 'assets/plugins/js/bootstrap.min.js' %}"></script>
+ <!-- Gsap JS -->
+ <script src="{% static 'assets/plugins/js/gsap/gsap.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-to-plugin.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-smoother.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/gsap/gsap-scroll-trigger.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/gsap/gsap-split-text.js' %}"></script>
+ <!-- Wow JS -->
+ <script src="{% static 'assets/plugins/js/wow.min.js' %}"></script>
+ <!-- Owl Carousel JS -->
+ <script src="{% static 'assets/plugins/js/owl.carousel.min.js' %}"></script>
+ <!-- Magnific Popup JS -->
+ <script src="{% static 'assets/plugins/js/magnific-popup.min.js' %}"></script>
+ <!-- CounterUp JS -->
+ <script src="{% static 'assets/plugins/js/jquery.counterup.min.js' %}"></script>
+ <script src="{% static 'assets/plugins/js/waypoints.min.js' %}"></script>
+ <!-- Nice Select JS -->
+ <script src="{% static 'assets/plugins/js/nice-select.min.js' %}"></script>
+ <!-- Cursor JS -->
+ <script src="{% static 'assets/plugins/js/ep-cursor.js' %}"></script>
+ <!-- Back To Top JS -->
+ <script src="{% static 'assets/plugins/js/backToTop.js' %}"></script>
+ <!-- Main JS -->
+ <script src="{% static 'assets/plugins/js/active.js' %}"></script>
+ <script src="{% static 'assets/libs/Inte_Tel_Code/js/intlTelInput.js' %}"></script>
+ <script src="{% static 'assets/libs/bootstrap-datepicker/js/bootstrap-datepicker.min.js' %}"></script>
+ <script>
+   var input = document.querySelector('#phone')
+   window.intlTelInput(input, {
+     preferredCountries: ['sa', 'eg'],
+     separateDialCode: true,
+     utilsScript: 'assets/libs/Inte_Tel_Code/js/utils.js'
+   })
+ </script>
+ <script>
+   // Select all the radio inputs
+   const radioInputs = document.querySelectorAll('.TimeItemss input[type="radio"]')
+   // Add a change event listener to the radio inputs
+   radioInputs.forEach((input) => {
+     input.addEventListener('change', () => {
+       // Remove the 'active' class from all .hawiacoloItem elements
+       const TimeItemss = document.querySelectorAll('.TimeItemss')
+       TimeItemss.forEach((item) => item.classList.remove('active'))
+       // Add the 'active' class to the .hawiacoloItem element that contains the checked radio input
+       const checkedItem = input.closest('.TimeItemss')
+       checkedItem.classList.add('active')
+     })
+   })
+ </script>
+
+ <script>
+   // Function to set the selected time in the input fields
+   function putTime(item) {
+     // Get the selected time range
+     var selectedOption = item.value // The value is the time range (from-to)
+     var times = selectedOption.split('-') // Split the value to get from and to times
+     var from = times[0]
+     var to = times[1]
+     // Set the from and to times in the respective input fields
+     document.getElementById('from_time').value = from
+     document.getElementById('to_time').value = to
+     // Enable the submit button
+     document.getElementById('submitbtn').disabled = false
+     console.log(from, to)
+     // hilight the selected time
+     var timesection = document.getElementById('GroupTimes') // Select the GroupTimes div
+     var times = document.getElementsByClassName('TimeItemss')
+     for (var i = 0; i < times.length; i++) {
+       times[i].classList.remove('active_time')
+     }
+     item.parentElement.classList.add('active_time')
+   }
+   
+   // submit function
+   var bookingform = document.getElementById('bookingform')
+   bookingform.addEventListener('submit', function (event) {
+     event.preventDefault()
+     // validate that all the fields are filled
+   
+     var date = document.getElementById('date_input').value
+     var from_time = document.getElementById('from_time').value
+     var to_time = document.getElementById('to_time').value
+     if (date == '' || from_time == '' || to_time == '') {
+       alert('Please fill all the fields')
+       return
+     }
+   
+     // submit the form
+     bookingform.submit()
+   })
+   
+   function convertTo12HourFormat(time) {
+     var [hours, minutes] = time.split(':') // Split the time into hours and minutes
+     hours = parseInt(hours) // Convert hours to a number
+   
+     // Determine AM or PM
+     var period = hours >= 12 ? 'PM' : 'AM'
+   
+     // Convert 24-hour format to 12-hour format
+     hours = hours % 12
+     hours = hours ? hours : 12 // If 0 hours, display as 12
+   
+     return `${hours}:${minutes} ${period}`
+   }
+   $(document).ready(function () {
+     // Initialize the datepicker
+     $('.bootstrap-datepicker-inline').datepicker({
+       format: 'mm/dd/yyyy',
+       todayHighlight: true
+     })
+   
+     // Function to handle the changeDate event
+     function handleDateChange(event) {
+       console.log('Date changed:', event.date)
+   
+       // Check if the selected date is in the past
+       var today = new Date()
+       today.setHours(0, 0, 0, 0)
+       var date = event.date
+       var singleTime = ''
+       var timesection = document.getElementById('GroupTimes') // Select the GroupTimes div
+   
+       // Clear the existing times
+       timesection.innerHTML = ''
+   
+       // If the date is in the past, return and don't proceed
+       if (today > date) {
+         alert('Please select a future date.')
+         return
+       }
+   
+       // Get the name of the day (e.g., Monday, Tuesday)
+       var dayName = date.toLocaleString('en-us', { weekday: 'long' })
+   
+       // Format the date as YYYY-MM-DD
+       date = new Date(date)
+       const year = date.getFullYear()
+       const month = (date.getMonth() + 1).toString().padStart(2, '0')
+       const day = date.getDate().toString().padStart(2, '0')
+       const formattedDate = `${year}-${month}-${day}`
+   
+       console.log('before ajax')
+       // Make an AJAX request to get the available times
+       $.ajax({
+         url: "{% url 'demo:get_available_time' %}",
+         type: 'GET',
+         data: {
+           dayName: dayName,
+           date: formattedDate
+         },
+         success: function (data) {
+           console.log(data)
+           if (data.available_times.length == 0) {
+             singleTime = `
+             <div>{% trans 'No available time' %}</div>
+             `
+             timesection.innerHTML = singleTime
+             return
+           }
+   
+           // Loop through the available times and populate the options
+           for (var i = 0; i < data.available_times.length; i++) {
+             var fromTime = convertTo12HourFormat(data.available_times[i].from);
+                     singleTime = `
+                         <div class="TimeItemss">
+                             <label for="TimeItem_${i}">
+                                 ${fromTime}
+                             </label>
+                             <input id="TimeItem_${i}" type="radio" name="hawiacolor" value="${data.available_times[i].from}-${data.available_times[i].to}" onclick="putTime(this)" />
+                         </div>
+                     `;
+                     timesection.innerHTML += singleTime;
+           }
+   
+           // fill input date with selected date
+           document.getElementById('date_input').value = formattedDate
+         },
+   
+         error: function (error) {
+           console.log(error)
+         }
+       })
+     }
+   
+     // Add an event listener for the changeDate event
+     $('.bootstrap-datepicker-inline').datepicker().on('changeDate', handleDateChange)
+   })
+ </script>
+        {% endblock %}
+
+    </div>
+  </div>

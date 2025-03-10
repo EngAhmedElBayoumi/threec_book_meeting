@@ -1,0 +1,103 @@
+
+.font-semibold a img{
+    width: 65%;
+    height: 100%;
+}
+
+label select{
+  height: 30px;
+  color: black;
+  padding: 0 10px;
+  font-weight: bolder;
+}
+#searchbar{
+  border: none;
+  min-width: auto;
+}
+
+
+.admin-form .form-row {
+  margin-bottom: 20px;
+}
+
+img {
+  border-radius: 5px;
+}
+
+
+.django-ckeditor-widget{
+  min-width: 100%;
+}
+
+.flex-grow input[type=text],
+.flex-grow input[type=number],
+.flex-grow input[type=email],
+.flex-grow input[type=password],
+.flex-grow input[type=date],
+.flex-grow input[type=time],
+.flex-grow input[type=datetime-local],
+.flex-grow input[type=month],
+.flex-grow input[type=week],
+.flex-grow input[type=search],
+.flex-grow input[type=tel],
+.flex-grow input[type=url]{
+  min-width: 100%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 0 10px;
+  height: 40px;
+}
+
+.flex-grow textarea{
+  min-width: 100%;
+  border: 1px solid gray;
+  border-radius: 20px;
+  margin-top: 10px;
+  padding: 10px 10px;
+}
+
+
+
+
+
+
+.max-w-2xl{
+  max-width: 100% !important;
+}
+
+.bg-red-600{
+  min-width: fit-content !important;
+}
+
+
+
+.asset-buttons-container {
+  padding: 10px;
+  display: flex;
+  gap: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.reload-btn,
+.load-more-btn {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.reload-btn:hover,
+.load-more-btn:hover {
+  background-color: #45a049;
+}
+
+.load-more-btn {
+  background-color: #2196F3;
+}
+
+.load-more-btn:hover {
+  background-color: #1976D2;
+}
