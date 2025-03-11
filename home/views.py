@@ -25,6 +25,8 @@ def home(request):
         # redirect to next page 
         return redirect('demo:request')
     
+    section_data = StudentSection.objects.first()
+    
     context = {
         'hero': HeroSection.objects.first(),  # Assuming you want only one hero section
         'stats': Statistics.objects.first(),   # Assuming you want only one statistics section
@@ -33,6 +35,11 @@ def home(request):
         'parent_testimonials': ParentTestimonial.objects.all(),
         'plans': Plans.objects.all(),
         'faqs': Faq.objects.all(),
+        'about_section': HomeAboutContent.objects.prefetch_related('features', 'stats').first(),
+        'accreditation_section': AccreditationSection.objects.prefetch_related('logos').first(),
+        'curriculum_section': CurriculumSection.objects.first(),
+        'student_section': section_data,
+        'hero_section2': HeroSection2.objects.first()
     }
     
     

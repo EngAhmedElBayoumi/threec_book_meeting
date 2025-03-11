@@ -449,133 +449,102 @@
           <!-- End Start Hero Area -->
           <!-- Start About Area -->
           <section class="ep-about ep-about--style2 ep-section section-gap position-relative">
+            {% if about_section %}
             <div class="container">
-              <div class="row align-items-center">
-                <div class="col-lg-6 col-12">
-                  <div class="ep-section__img ep-section__img--style2 position-relative">
-                    <div class="ep-section__img-main">
-                      <img src="{% static 'assets/images/about/about-2/about-img.png' %}" alt="about-img" />
+                <div class="row align-items-center">
+                    <!-- الجزء الأول -->
+                    <div class="col-lg-6 col-12">
+                        <div class="ep-section__img ep-section__img--style2 position-relative">
+                            <div class="ep-section__img-main">
+                                <img src="{{ about_section.banner_image.url }}" alt="about-image">
+                            </div>
+                            
+                            {% for stat in about_section.stats.all %}
+                            <div class="overview-card updown-ani">
+                                <div class="overview-card__icon">
+                                    <img src="{{ stat.stat_icon.url }}" alt="stat-icon">
+                                </div>
+                                <div class="overview-card__info">
+                                    <h4><span>{{ stat.stat_number }}</span>{{ stat.stat_label }}</h4>
+                                </div>
+                            </div>
+                            {% endfor %}
+                        </div>
                     </div>
-                    <div class="overview-card updown-ani">
-                      <div class="overview-card__icon">
-                        <img src="{% static 'assets/images/about/about-1/user.svg' %}" alt="user-icon" />
-                      </div>
-                      <div class="overview-card__info">
-                        <h4><span>{% trans '2' %}</span>{% trans 'k+' %}</h4>
-                        <p>
-                          {% trans 'Full Time Student' %}
-                        </p>
-                      </div>
+        
+                    <!-- الجزء الثاني -->
+                    <div class="col-lg-6 col-12">
+                        <div class="ep-section__content">
+                            <div class="ep-section-head">
+                                <span class="ep-section-head__sm-title ep1-color">{{ about_section.subtitle }}</span>
+                                <h3 class="ep-section-head__big-title left">{{ about_section.section_title }}</h3>
+                                <p class="ep-section-head__text">
+                                    {{ about_section.main_description|safe }}
+                                </p>
+                            </div>
+        
+                            <div class="ep-section__widget">
+                                {% for feature in about_section.features.all %}
+                                <div class="ep-feature-list">
+                                    <div class="ep-feature-list__icon">
+                                        <i class="{{ feature.icon_class }}"></i>
+                                    </div>
+                                    <div class="ep-feature-list__info">
+                                        <h5>{{ feature.feature_title }}</h5>
+                                        <p>{{ feature.feature_text }}</p>
+                                    </div>
+                                </div>
+                                {% endfor %}
+                            </div>
+        
+                            <div class="ep-section__btn">
+                                <a href="about.html" class="ep-btn border-btn">
+                                    {{ about_section.button_label }}
+                                    <i class="fi fi-rs-arrow-small-right"></i>
+                                </a>
+                            </div>
+                        </div>
                     </div>
-                  </div>
                 </div>
-                <div class="col-lg-6 col-12">
-                  <div class="ep-section__content">
-                    <div class="ep-section-head">
-                      <span class="ep-section-head__sm-title ep1-color">{% trans 'Know About Us' %}</span>
-                      <h3 class="ep-section-head__big-title left">{% trans 'Why Join 3C?' %}</h3>
-                      <p class="ep-section-head__text">
-                        {% trans '3C offers your child the opportunity to acquire essential coding skills and build foundational programming projects that every programmer should be able to create. Your child will gain hands-on experience with the same programming languages used by professionals, empowering them to pursue their dream career path.' %}
-                      </p>
-                    </div>
-                    <div class="ep-section__widget">
-                      <div class="ep-feature-list">
-                        <div class="ep-feature-list__icon">
-                          <i class="fi fi-ss-check-circle"></i>
-                        </div>
-                        <div class="ep-feature-list__info">
-                          <h5>{% trans 'Live Online Sessions' %}</h5>
-                          <p>
-                            {% trans 'Choose between group or private lessons tailored to your child’s needs.' %}
-                          </p>
-                        </div>
-                      </div>
-                      <div class="ep-feature-list">
-                        <div class="ep-feature-list__icon">
-                          <i class="fi fi-ss-check-circle"></i>
-                        </div>
-                        <div class="ep-feature-list__info">
-                          <h5>{% trans 'Simplified and Gamified Content' %}</h5>
-                          <p>
-                            {% trans 'Top-Ranked, In-Demand Tracks with Simplified Content high-demand tech fields. Based on global best practices, we make learning the most relevant skills simple and enjoyable.' %}
-                          </p>
-                        </div>
-                      </div>
-                      <div class="ep-feature-list">
-                        <div class="ep-feature-list__icon">
-                          <i class="fi fi-ss-check-circle"></i>
-                        </div>
-                        <div class="ep-feature-list__info">
-                          <h5>{% trans 'Expert Instructors' %}</h5>
-                          <p>
-                            {% trans 'Experienced teachers will guide your child in either English or Arabic.' %}
-                          </p>
-                        </div>
-                      </div>
-                      <div class="ep-feature-list">
-                        <div class="ep-feature-list__icon">
-                          <i class="fi fi-ss-check-circle"></i>
-                        </div>
-                        <div class="ep-feature-list__info">
-                          <h5>{% trans 'Long-Term Career Plan' %}</h5>
-                          <p>
-                            {% trans 'Our comprehensive curriculum provides a clear roadmap, helping your child explore future career opportunities in tech. After-Session Guidance' %}
-                          </p>
-                        </div>
-                      </div>
-                      <div class="ep-feature-list">
-                        <div class="ep-feature-list__icon">
-                          <i class="fi fi-ss-check-circle"></i>
-                        </div>
-                        <div class="ep-feature-list__info">
-                          <h5>{% trans 'After-Session Guidance' %}</h5>
-                          <p>
-                            {% trans "Continuous support to help reinforce and enhance your child's coding performance." %}
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="ep-section__btn">
-                      <a href="about.html" class="ep-btn border-btn">{% trans 'Book Now ' %}<i class="fi fi-rs-arrow-small-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
-          </section>
+            {% endif %}
+        </section>
           <!-- End Start About Area -->
 
           <!-- Start Brand -->
           <div class="ep-brand section-gap pt-0">
+            {% if accreditation_section %}
             <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-lg-8 col-xl-6 col-md-8 col-12">
-                  <div class="ep-section-head text-center">
-                    <span class="ep-section-head__sm-title ep1-color">{% trans 'Our Accreditations' %}</span>
-                    <h3 class="ep-section-head__big-title left">{% trans 'The Most ' %}<span>{% trans 'Accredited' %}</span>{% trans ' School in the Middle East ISO 21001, STEM' %}</h3>
-                  </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 col-xl-6 col-md-8 col-12">
+                        <div class="ep-section-head text-center">
+                            <span class="ep-section-head__sm-title ep1-color">
+                                {{ accreditation_section.section_subtitle }}
+                            </span>
+                            <h3 class="ep-section-head__big-title left">
+                                {{ accreditation_section.main_title_part1 }}
+                                <span>{{ accreditation_section.highlighted_word }}</span>
+                                {{ accreditation_section.main_title_part2 }}
+                            </h3>
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
             <div class="container ep-container">
-              <div class="row">
-                <div class="col-12">
-                  <div class="owl-carousel ep-brand__slider">
-                    <!-- Single Brand -->
-                    <a href="#" class="ep-brand__logo ep-brand__logo--style2"><img src="{% static 'assets/images/brand/brand-2/1.svg' %}" alt="brand-logo" /></a>
-                    <!-- Single Brand -->
-                    <a href="#" class="ep-brand__logo ep-brand__logo--style2"><img src="{% static 'assets/images/brand/brand-2/2.svg' %}" alt="brand-logo" /></a>
-                    <!-- Single Brand -->
-                    <a href="#" class="ep-brand__logo ep-brand__logo--style2"><img src="{% static 'assets/images/brand/brand-2/3.svg' %}" alt="brand-logo" /></a>
-                    <!-- Single Brand -->
-                    <a href="#" class="ep-brand__logo ep-brand__logo--style2"><img src="{% static 'assets/images/brand/brand-2/4.svg' %}" alt="brand-logo" /></a>
-                    <!-- Single Brand -->
-                    <a href="#" class="ep-brand__logo ep-brand__logo--style2"><img src="{% static 'assets/images/brand/brand-2/5.svg' %}" alt="brand-logo" /></a>
-                  </div>
+                <div class="row">
+                    <div class="col-12">
+                        <div class="owl-carousel ep-brand__slider">
+                            {% for logo in accreditation_section.logos.all %}
+                            <a href="{{ logo.logo_url|default:'#' }}" class="ep-brand__logo ep-brand__logo--style2">
+                                <img src="{{ logo.logo_image.url }}" alt="accreditation-logo">
+                            </a>
+                            {% endfor %}
+                        </div>
+                    </div>
                 </div>
-              </div>
             </div>
-          </div>
+            {% endif %}
+        </div>
           <!-- End Start Brand -->
 
           <!-- Start Event Area -->
@@ -707,9 +676,17 @@
               <div class="row justify-content-center">
                 <div class="col-lg-10 col-xl-10 col-md-12 col-12">
                   <div class="ep-section-head text-center">
-                    <span class="ep-section-head__sm-title ep1-color">{% trans 'Our Developer Tools in One Curriculum' %}</span>
-                    <h3 class="ep-section-head__big-title left">{% trans 'Explore our curriculum packed with over ' %}<span>{% trans 'Our' %}</span>{% trans ' tools and resources, providing your child with a full tech-stack experience.' %}</h3>
-                  </div>
+                    {% if curriculum_section %}
+                    <span class="ep-section-head__sm-title ep1-color">
+                        {{ curriculum_section.section_subtitle }}
+                    </span>
+                    <h3 class="ep-section-head__big-title left">
+                        {{ curriculum_section.main_title_part1 }}
+                        <span>{{ curriculum_section.highlighted_word }}</span>
+                        {{ curriculum_section.main_title_part2 }}
+                    </h3>
+                    {% endif %}
+                </div>
                 </div>
               </div>
               <div class="row">
@@ -747,12 +724,15 @@
               <div class="row justify-content-center">
                 <div class="col-lg-8 col-xl-8 col-md-10 col-12">
                   <div class="ep-section-head text-center">
-                    <span class="ep-section-head__sm-title ep1-color">{% trans 'Our Students' %}</span>
-                    <h3 class="ep-section-head__big-title left mb-2">{% trans 'Meet Our ' %}<span>{% trans 'Students' %}</span></h3>
-                    <p>
-                      {% trans 'At 3C, your child will learn programming using cutting-edge techniques. Following in the footsteps of professionals, they will have the opportunity to design projects independently. Along with coding, they will also gain valuable skills in areas like marketing, human resources, critical thinking, and more.' %}
-                    </p>
-                  </div>
+                    {% if student_section %}
+                    <div class="rich-text-title">
+                        {{ student_section.title|safe }}
+                    </div>
+                    <div class="rich-text-content">
+                        {{ student_section.description|safe }}
+                    </div>
+                    {% endif %}
+                </div>
                 </div>
               </div>
 
@@ -917,30 +897,30 @@
           </section>
           <!-- End Pricing Area -->
 
-          <section class="ep-hero ep-hero--style2 hero-bg background-image" style="background-image: url('assets/images/hero/home-2/bg.png')">
-            <div class="container ep-container">
-              <div class="row align-items-center">
-                <div class="col-lg-12 col-xl-6 col-12">
-                  <div class="ep-hero__content ep-hero__content--style2">
-                    <h1 class="ep-hero__title left">{% trans 'Give your child chance' %}</h1>
-                    <p class="ep-hero__text">
-                      {% trans 'For over 9 years, 3C has been the #1 platform in the Middle East and Africa for coding and AI education. We combine coding, AI, and entrepreneurship to build the leaders of tomorrow. Our curriculum teaches kids not only how to code but also helps them adapt to change and develop a growth mindset, empowering them to thrive in any environment.' %}
-                    </p>
-                    <p>
-                      {% trans 'Accredited with ISO 21001 and STEM, we are the most trusted platform for coding and AI education, setting the standard for excellence.' %}
-                    </p>
-                  </div>
-                </div>
-                <div class="col-lg-12 offset-xl-1 col-xl-5 col-12 order-top">
-                  <div class="ep-hero__widget ep-hero__widget-style2 position-relative">
-                    <div class="ep-hero__img">
-                      <img src="{% static 'assets/images/hero/home-2/hero-img.png' %}" alt="hero-img" />
+          <section class="ep-hero ep-hero--style2 hero-bg background-image" 
+         style="background-image: url('{{ hero_section2.background_image.url }}')">
+    <div class="container ep-container">
+        <div class="row align-items-center">
+            <div class="col-lg-12 col-xl-6 col-12">
+                <div class="ep-hero__content ep-hero__content--style2">
+                    <h1 class="ep-hero__title left">
+                        {{ hero_section2.title|safe }}
+                    </h1>
+                    <div class="ep-hero__text">
+                        {{ hero_section2.description|safe }}
                     </div>
-                  </div>
                 </div>
-              </div>
             </div>
-          </section>
+            <div class="col-lg-12 offset-xl-1 col-xl-5 col-12 order-top">
+                <div class="ep-hero__widget ep-hero__widget-style2 position-relative">
+                    <div class="ep-hero__img">
+                        <img src="{{ hero_section2.main_image.url }}" alt="hero-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
           <!-- Start Faq Area -->
           <section class="ep-faq ep-faq--style2 section-gap position-relative">

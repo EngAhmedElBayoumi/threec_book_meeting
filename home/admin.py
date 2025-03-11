@@ -3,17 +3,8 @@ from django.contrib.auth.admin import UserAdmin as BaseUserAdmin
 from django.contrib.auth.admin import GroupAdmin as BaseGroupAdmin
 from django.contrib.auth.models import User, Group
 from unfold.admin import ModelAdmin
-from .models import (
-    HeroSection, 
-    Statistics, 
-    CourseCategory, 
-    StudentTestimonial,
-    ParentTestimonial,
-    Plans,
-    Faq,
-    Feature,
-    social
-)
+from .models import *
+from modeltranslation.admin import TranslationAdmin
 
 # import html formate
 from django.utils.html import format_html
@@ -102,4 +93,101 @@ class socialAdmin(ModelAdmin):
     list_display = ['name']
     
     
+    
+    
+
+
+class FeatureInline(admin.TabularInline):
+    model = HomeFeatureItem
+    extra = 1
+    fields = ('feature_title', 'feature_text', 'icon_class')
+
+class StatisticInline(admin.TabularInline):
+    model = HomeStatisticItem
+    extra = 1
+    fields = ('stat_number', 'stat_label', 'stat_icon')
+
+@admin.register(HomeAboutContent)
+class HomeAboutAdmin(TranslationAdmin):
+    inlines = [FeatureInline, StatisticInline]
+    list_display = ('section_title', 'subtitle')
+    fieldsets = (
+        (None, {
+            'fields': ('section_title', 'subtitle', 'main_description', 'banner_image', 'button_label')
+        }),
+    )
+    
+   
+   
+class AccreditationLogoInline(admin.TabularInline):
+    model = AccreditationLogo
+    extra = 1
+    fields = ('logo_image', 'logo_url', 'display_order')
+    sortable_field_name = "display_order"
+
+@admin.register(AccreditationSection)
+class AccreditationAdmin(TranslationAdmin):
+    inlines = [AccreditationLogoInline]
+    list_display = ('main_title_part1', 'highlighted_word')
+    
+    fieldsets = (
+        ('Titles', {
+            'fields': (
+                ('section_subtitle',),
+                ('main_title_part1', 'highlighted_word', 'main_title_part2')
+            )
+        }),
+    ) 
+    
+    
+    
+    
+    
+    
+@admin.register(CurriculumSection)
+class CurriculumSectionAdmin(TranslationAdmin):
+    list_display = ('main_title_part1', 'highlighted_word')
+    
+    fieldsets = (
+        ('Content', {
+            'fields': (
+                'section_subtitle',
+                ('main_title_part1', 'highlighted_word', 'main_title_part2')
+            )
+        }),
+    )
+    
+    
+from django import forms
+from ckeditor.widgets import CKEditorWidget
+
+class StudentSectionForm(forms.ModelForm):
+    class Meta:
+        model = StudentSection
+        fields = '__all__'
+        widgets = {
+            'title': CKEditorWidget(config_name='title_config'),
+            'description': CKEditorWidget(),
+        }
+
+@admin.register(StudentSection)
+class StudentSectionAdmin(admin.ModelAdmin):
+    form = StudentSectionForm
+    list_display = ('title',)
+    
+    
+    
+class HeroSection2Form(forms.ModelForm):
+    class Meta:
+        model = HeroSection2
+        fields = '__all__'
+        widgets = {
+            'title': CKEditorWidget(),
+            'description': CKEditorWidget(),
+        }
+
+@admin.register(HeroSection2)
+class HeroSection2Admin(admin.ModelAdmin):
+    form = HeroSection2Form
+    list_display = ('title',)
     

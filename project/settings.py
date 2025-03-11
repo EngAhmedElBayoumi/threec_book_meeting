@@ -48,7 +48,9 @@ INSTALLED_APPS = [
     "home",
     "demo",
     "google_translate",
-    "django_json_widget"
+    "django_json_widget",
+    'ckeditor',
+    
 ]
 
 AUTOTRANSLATE_GOOGLE_TRANSLATE_API_KEY = "AIzaSyCe-0x12xoHhwawDNxgXvmm8iNh82oQAcg"
